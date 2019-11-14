@@ -59,11 +59,6 @@
                     </TabItem.Header>
 
                     <controls:DebugView x:Name="debugControl"/>
-                            <Image Source="pack://siteoforigin:,,,/Resources/food_48.png"
-                                   Height="16"/>
-                            <TextBlock Text="Shops" Foreground="Blue" />
-                        </StackPanel>
-                    </TabItem.Header>
 
                 </TabItem>
             </TabControl>
