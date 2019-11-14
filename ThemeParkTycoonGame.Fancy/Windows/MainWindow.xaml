@@ -56,7 +56,7 @@
                         </StackPanel>
                     </TabItem.Header>
 
-                    <controls:GuestsView x:Name="guestsControl1"/>
+                    <controls:MarketControl x:Name="marketControl"/>
                 </TabItem>
             </TabControl>
         </Grid>
