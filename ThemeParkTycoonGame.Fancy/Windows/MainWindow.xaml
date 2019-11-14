@@ -49,6 +49,18 @@
                     <controls:GuestsView x:Name="guestsControl"/>
                 </TabItem>
 
+                <TabItem Margin="-2,-2,-2,0">
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="pack://siteoforigin:,,,/Resources/roller_coaster_48.png"
+                                   Height="16"/>
+                            <TextBlock Text="Marketplace" Foreground="Blue" />
+                        </StackPanel>
+                    </TabItem.Header>
+
+                    <controls:MarketControl x:Name="marketControl"/>
+                </TabItem>
+
                 <TabItem>
                     <TabItem.Header>
                         <StackPanel Orientation="Horizontal">
