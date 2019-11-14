@@ -51,9 +51,9 @@
                 <TabItem>
                     <TabItem.Header>
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="pack://siteoforigin:,,,/Resources/icon.png"
+                            <Image Source="pack://siteoforigin:,,,/Resources/stats_48.png"
                                    Height="16"/>
-                            <TextBlock Text="Map" Foreground="Blue" />
+                            <TextBlock Text="Financial" Foreground="Blue" />
                         </StackPanel>
                     </TabItem.Header>
 
