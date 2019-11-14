@@ -10,6 +10,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace ThemeParkTycoonGame.Fancy.Controls
@@ -17,7 +18,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
     /// <summary>
     /// Interaction logic for DebugView.xaml
     /// </summary>
-    public partial class DebugView : Window
+    public partial class DebugView : UserControl
     {
         public DebugView()
         {
