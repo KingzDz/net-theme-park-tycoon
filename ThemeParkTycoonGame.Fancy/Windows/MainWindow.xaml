@@ -47,6 +47,18 @@
 
                     <controls:GuestsView x:Name="guestsControl"/>
                 </TabItem>
+
+                <TabItem>
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="pack://siteoforigin:,,,/Resources/icon.png"
+                                   Height="16"/>
+                            <TextBlock Text="Map" Foreground="Blue" />
+                        </StackPanel>
+                    </TabItem.Header>
+
+                    <controls:GuestsView x:Name="mapControl"/>
+                </TabItem>
             </TabControl>
         </Grid>
     </Grid>
