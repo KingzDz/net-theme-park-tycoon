@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ThemeParkTycoonGame.Core;
 
 namespace ThemeParkTycoonGame.Fancy.Controls
 {
@@ -20,9 +21,24 @@ namespace ThemeParkTycoonGame.Fancy.Controls
     /// </summary>
     public partial class EmployeeView : UserControl
     {
+        private GuestList guests;
+        public GuestList Guests
+        {
+            get
+            {
+                return guests;
+            }
+            set
+            {
+                guests = value;
+            }
+        }
+        
         public EmployeeView()
         {
             InitializeComponent();
+
+            this.DataContext = this;
         }
     }
 }

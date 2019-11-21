@@ -23,6 +23,7 @@ namespace ThemeParkTycoonGame.Core
         public decimal EntryFee;
 
         public GuestController GuestController;
+        public GuestController EmployeeController;
 
         private string name;
         public string Name

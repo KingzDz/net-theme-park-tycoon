@@ -18,6 +18,7 @@ namespace ThemeParkTycoonGame.Core
         public Employee()
         {
             Name = NameGenerator.NextName();
+                       
         }
     }
 }
