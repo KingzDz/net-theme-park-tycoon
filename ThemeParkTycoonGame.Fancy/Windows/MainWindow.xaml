@@ -49,7 +49,7 @@
                     <controls:GuestsView x:Name="guestsControl"/>
                 </TabItem>
 
-                <TabItem Margin="-2,-2,-2,0">
+                <TabItem>
                     <TabItem.Header>
                         <StackPanel Orientation="Horizontal">
                             <Image Source="pack://siteoforigin:,,,/Resources/roller_coaster_48.png"
