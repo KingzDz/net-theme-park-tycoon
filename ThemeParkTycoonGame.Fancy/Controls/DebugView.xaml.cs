@@ -23,18 +23,21 @@ namespace ThemeParkTycoonGame.Fancy.Controls
     {
         public GuestList guests;
         public DebugGuestView debugGuestView;
+        
         public DebugView()
         {
-            
+            debugGuestView = new DebugGuestView();
             InitializeComponent();
         }
 
         private void EditGuestButton_Click(object sender, RoutedEventArgs e)
         {
             if(guests.Guests.Count>0)
-            { 
-                
-            
+            {
+
+                debugGuestView.guestName = guests.Guests[0].Name;
+                debugGuestView.InitializeComponent();
+                debugGuestView.BringIntoView();
             }
         }
     }

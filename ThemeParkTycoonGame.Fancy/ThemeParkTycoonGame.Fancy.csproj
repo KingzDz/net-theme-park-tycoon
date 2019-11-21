@@ -60,8 +60,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Controls\EmployeeView.xaml.cs">
-      <DependentUpon>EmployeeView.xaml</DependentUpon>
+    <Compile Include="Controls\DebugGuestView.xaml.cs">
+      <DependentUpon>DebugGuestView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\DebugView.xaml.cs">
       <DependentUpon>DebugView.xaml</DependentUpon>
@@ -73,7 +73,7 @@
       <DependentUpon>MarketControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="WpfHelper.cs" />
-    <Page Include="Controls\EmployeeView.xaml">
+    <Page Include="Controls\DebugGuestView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
