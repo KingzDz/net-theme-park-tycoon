@@ -8,5 +8,6 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <Button x:Name="EditGuestButton" Click="EditGuestButton_Click" Height="64" Margin="0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch">Edit Guests</Button>
+        <Button x:Name="changeWeatherButton"  Height="64" Margin="0,64,0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" Click="changeWeatherButton_Click">Change Weather</Button>
     </Grid>
 </UserControl>

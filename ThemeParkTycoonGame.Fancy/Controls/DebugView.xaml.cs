@@ -40,5 +40,9 @@ namespace ThemeParkTycoonGame.Fancy.Controls
                 debugGuestView.BringIntoView();
             }
         }
+        private void changeWeatherButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
