@@ -51,6 +51,19 @@
                 <TabItem>
                     <TabItem.Header>
                         <StackPanel Orientation="Horizontal">
+
+                            <Image Source="pack://siteoforigin:,,,/Resources/stats_48.png"
+                                   Height="16"/>
+                            <TextBlock Text="Financial" Foreground="Blue" />
+                        </StackPanel>
+                    </TabItem.Header>
+
+                    <controls:FinancialView x:Name="financialControl"/>
+                </TabItem>
+
+                <TabItem>
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal">
                             <Image Source="pack://siteoforigin:,,,/Resources/roller_coaster_48.png"
                                    Height="16"/>
                             <TextBlock Text="Marketplace" Foreground="Blue" />
@@ -82,6 +95,7 @@
                     </TabItem.Header>
 
                     <controls:DebugView x:Name="debugControl"/>
+
                 </TabItem>
             </TabControl>
         </Grid>
