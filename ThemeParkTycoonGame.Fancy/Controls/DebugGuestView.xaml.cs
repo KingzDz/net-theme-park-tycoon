@@ -26,5 +26,10 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             
             InitializeComponent();
         }
+
+        private void ChangeNameButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

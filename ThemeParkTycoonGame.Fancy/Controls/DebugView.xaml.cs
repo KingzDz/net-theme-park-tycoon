@@ -26,8 +26,10 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         
         public DebugView()
         {
-            debugGuestView = new DebugGuestView();
             InitializeComponent();
+            debugGuestView = new DebugGuestView();
+            controlParent.Children.Add(debugGuestView);
+            controlParent.Visibility = Visibility.Hidden;
         }
 
         private void EditGuestButton_Click(object sender, RoutedEventArgs e)
@@ -36,8 +38,8 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             {
 
                 debugGuestView.guestName = guests.Guests[0].Name;
-                debugGuestView.InitializeComponent();
-                debugGuestView.BringIntoView();
+                MessageBox.Show(debugGuestView.guestName);
+                controlParent.Visibility = Visibility.Visible;
             }
         }
     }
