@@ -53,5 +53,11 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         {
             guestsListView.Items.Refresh();
         }
+
+        private void GuestsListView_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            Guestinfo guestInfo = new Guestinfo();
+            guestInfo.Show();
+        }
     }
 }
