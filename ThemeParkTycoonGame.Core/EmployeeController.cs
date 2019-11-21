@@ -4,19 +4,19 @@ using System.Text;
 
 namespace ThemeParkTycoonGame.Core
 {
-    class EmployeeController
+    public class EmployeeController
     {
-        public List<Employee> WorkerList = new List<Employee>();
+        List<Employee> WorkerList = new List<Employee>();
 
         bool hasTicked;
 
-        public void AddEmployee(Employee employee)
+        void AddEmployee(Employee employee)
         {
             WorkerList.Add(NewEmployee("excitement"));
 
         }
 
-        public Employee NewEmployee(string UniqueId)
+        Employee NewEmployee(string UniqueId)
         {
             Employee worker = new Employee();
             worker.Function = "Performer";

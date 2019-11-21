@@ -57,7 +57,7 @@
                         </StackPanel>
                     </TabItem.Header>
 
-                    <controls:EmployeeView x:Name="employeeControl" Margin="0,0,6,9" Loaded="employeeControl_Loaded"/>
+                    <controls:EmployeeView x:Name="employeeControl" Margin="0,0,6,9"/>
                 </TabItem>
             </TabControl>
         </Grid>

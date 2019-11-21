@@ -22,8 +22,8 @@ namespace ThemeParkTycoonGame.Core
         public ParkInventory ParkInventory;
         public decimal EntryFee;
 
+        public EmployeeController EmployeeController;
         public GuestController GuestController;
-        public GuestController EmployeeController;
 
         private string name;
         public string Name
@@ -66,6 +66,8 @@ namespace ThemeParkTycoonGame.Core
             EntryFee = 15;
 
             desirables = new List<Desire>();
+
+            EmployeeController = new EmployeeController();
 
             GuestController = new GuestController(desirables, ref Guests);
             GuestController.MinimumCash = EntryFee; // TODO: when entryfee changes, this MinimumCash needs to as well.

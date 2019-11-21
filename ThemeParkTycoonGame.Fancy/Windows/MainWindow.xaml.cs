@@ -71,6 +71,7 @@ namespace ThemeParkTycoonGame.Fancy.Windows
         {
             this.park.GuestController.DoTick((int) tickTimer.Interval.TotalMilliseconds);
             this.park.EmployeeController.DoTick((int)tickTimer.Interval.TotalMilliseconds);
+  
         }
 
         private void MainWindow_MouseDown(object sender, MouseButtonEventArgs e)
