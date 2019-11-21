@@ -56,7 +56,7 @@
                             <TextBlock Text="Shops" Foreground="Blue" />
                         </StackPanel>
                     </TabItem.Header>
-
+                    <controls:ShopView x:Name="ShopControl"/>
                 </TabItem>
             </TabControl>
         </Grid>
