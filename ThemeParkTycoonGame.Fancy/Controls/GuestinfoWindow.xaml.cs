@@ -12,14 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace ThemeParkTycoonGame.Fancy
+namespace ThemeParkTycoonGame.Fancy.Controls
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for GuestinfoWindow.xaml
     /// </summary>
-    public partial class Guestinfo : Window
+    public partial class GuestinfoWindow : Window
     {
-        public Guestinfo()
+        public GuestinfoWindow()
         {
             InitializeComponent();
         }
