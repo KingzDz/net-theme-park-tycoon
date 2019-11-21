@@ -66,6 +66,9 @@
     <Compile Include="Controls\GuestsView.xaml.cs">
       <DependentUpon>GuestsView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\MarketControl.xaml.cs">
+      <DependentUpon>MarketControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WpfHelper.cs" />
     <Page Include="Controls\DebugView.xaml">
       <SubType>Designer</SubType>
@@ -74,6 +77,10 @@
     <Page Include="Controls\GuestsView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\MarketControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\ParkDetailsView.xaml">
       <SubType>Designer</SubType>
