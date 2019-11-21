@@ -7,6 +7,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-            
+        <Button Content="Koop een shop" Height="30px" Width=" 150px" VerticalAlignment="Bottom" x:Name="buyShopButton" Click="buyShopButton_Click"></Button>
     </Grid>
 </UserControl>
