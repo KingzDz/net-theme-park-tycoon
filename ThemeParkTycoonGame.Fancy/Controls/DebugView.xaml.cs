@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace ThemeParkTycoonGame.Fancy.Controls
 {
     /// <summary>
-    /// Interaction logic for ShopView.xaml
+    /// Interaction logic for DebugView.xaml
     /// </summary>
-    public partial class ShopView : UserControl
+    public partial class DebugView : UserControl
     {
-        public ShopView()
+        public DebugView()
         {
             InitializeComponent();
         }

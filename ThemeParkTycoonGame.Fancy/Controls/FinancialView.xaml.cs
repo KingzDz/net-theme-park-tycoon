@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace ThemeParkTycoonGame.Fancy.Controls
 {
     /// <summary>
-    /// Interaction logic for ShopView.xaml
+    /// Interaction logic for FinancialView.xaml
     /// </summary>
-    public partial class ShopView : UserControl
+    public partial class FinancialView : UserControl
     {
-        public ShopView()
+        public FinancialView()
         {
             InitializeComponent();
         }
