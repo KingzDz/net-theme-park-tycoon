@@ -80,5 +80,15 @@ namespace ThemeParkTycoonGame.Fancy.Windows
         {
             this.Close();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void employeeControl_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

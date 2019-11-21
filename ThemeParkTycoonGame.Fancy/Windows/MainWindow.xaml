@@ -32,7 +32,7 @@
                             <TextBlock Text="Park" Foreground="Blue" />
                         </StackPanel>
                     </TabItem.Header>
-                    
+
                     <controls:ParkDetailsView x:Name="parkControl"/>
                 </TabItem>
 
@@ -47,7 +47,7 @@
 
                     <controls:GuestsView x:Name="guestsControl"/>
                 </TabItem>
-                
+
                 <TabItem>
                     <TabItem.Header>
                         <StackPanel Orientation="Horizontal">
@@ -57,9 +57,11 @@
                         </StackPanel>
                     </TabItem.Header>
 
-                    <controls:EmployeeView x:Name="employeeControl"/>
+                    <controls:EmployeeView x:Name="employeeControl" Margin="0,0,6,9" Loaded="employeeControl_Loaded"/>
                 </TabItem>
             </TabControl>
         </Grid>
+
+
     </Grid>
 </Window>
