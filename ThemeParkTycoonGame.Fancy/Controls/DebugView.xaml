@@ -6,8 +6,14 @@
              xmlns:local="clr-namespace:ThemeParkTycoonGame.Fancy.Controls"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
+    <StackPanel>
+        <Button x:Name="AddNewGuestButton" Content="Add New Guest Button" Height="64" Click="AddNewGuestButton_Click"></Button>
         <Button x:Name="EditGuestButton" Click="EditGuestButton_Click" Height="64" Margin="0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch">Edit Guests</Button>
+
         <StackPanel x:Name="controlParent"></StackPanel>
-    </Grid>
+
+
+        <Button x:Name="changeWeatherButton"  Height="64" Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" Click="changeWeatherButton_Click" Content="Change Weather"/>
+    </StackPanel>
+
 </UserControl>

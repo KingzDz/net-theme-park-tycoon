@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ThemeParkTycoonGame.Core;
 using ThemeParkTycoonGame.Fancy.Controls;
+
 namespace ThemeParkTycoonGame.Fancy.Controls
 {
     /// <summary>
@@ -41,6 +42,25 @@ namespace ThemeParkTycoonGame.Fancy.Controls
                 MessageBox.Show(debugGuestView.guestName);
                 controlParent.Visibility = Visibility.Visible;
             }
+        }
+
+        private void AddNewGuestButton_Click(object sender, RoutedEventArgs e)
+        {
+            Guest guest = new Guest();
+
+            guests.Guests.Add(guest); // Add created guest to guest list
+
+            // Show message box
+            string message = "There has been added a guest succesfully!";
+            string title = "Add New Guest";
+
+            MessageBox.Show(message, title);
+        }
+        
+        private void changeWeatherButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+
         }
     }
 }
