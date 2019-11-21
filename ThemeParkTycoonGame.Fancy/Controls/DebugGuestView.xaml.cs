@@ -23,6 +23,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         public string guestName;
         public DebugGuestView()
         {
+            
             InitializeComponent();
         }
     }
