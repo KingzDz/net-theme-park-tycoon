@@ -19,9 +19,17 @@ namespace ThemeParkTycoonGame.Fancy.Controls
     /// </summary>
     public partial class GuestinfoWindow : Window
     {
-        public GuestinfoWindow()
+        Core.Guest guest;
+        public GuestinfoWindow(Core.Guest selectedGuest)
         {
             InitializeComponent();
+
+            this.guest = selectedGuest;
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            Labeltje.Content = guest.Name;
         }
     }
 }
