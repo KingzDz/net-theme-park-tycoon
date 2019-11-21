@@ -36,7 +36,6 @@
                     <controls:ParkDetailsView x:Name="parkControl"/>
                 </TabItem>
 
-                
                 <TabItem>
                     <TabItem.Header>
                         <StackPanel Orientation="Horizontal">
@@ -66,12 +65,23 @@
                         <StackPanel Orientation="Horizontal">
                             <Image Source="pack://siteoforigin:,,,/Resources/worker_48.png"
                                    Height="16"/>
+                            <TextBlock Text="Employee" Foreground="Blue" />
+                        </StackPanel>
+                    </TabItem.Header>
+
+                    <controls:EmployeeView x:Name="employeeControl"/>
+                </TabItem>
+
+                <TabItem>
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="pack://siteoforigin:,,,/Resources/worker_48.png"
+                                   Height="16"/>
                             <TextBlock Text="Debug" Foreground="Blue" />
                         </StackPanel>
                     </TabItem.Header>
 
                     <controls:DebugView x:Name="debugControl"/>
-
                 </TabItem>
             </TabControl>
         </Grid>
