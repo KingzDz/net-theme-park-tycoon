@@ -12,30 +12,18 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using ThemeParkTycoonGame.Core;
-using ThemeParkTycoonGame.Fancy.Controls;
+
 namespace ThemeParkTycoonGame.Fancy.Controls
 {
     /// <summary>
-    /// Interaction logic for DebugView.xaml
+    /// Interaction logic for DebugGuestView.xaml
     /// </summary>
-    public partial class DebugView : UserControl
+    public partial class DebugGuestView : UserControl
     {
-        public GuestList guests;
-        public DebugGuestView debugGuestView;
-        public DebugView()
+        public string guestName;
+        public DebugGuestView()
         {
-            
             InitializeComponent();
-        }
-
-        private void EditGuestButton_Click(object sender, RoutedEventArgs e)
-        {
-            if(guests.Guests.Count>0)
-            { 
-                
-            
-            }
         }
     }
 }
