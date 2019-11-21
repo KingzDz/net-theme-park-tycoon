@@ -17,7 +17,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
     /// <summary>
     /// Interaction logic for FinancialView.xaml
     /// </summary>
-    public partial class FinancialView : Window
+    public partial class FinancialView : UserControl
     {
         public FinancialView()
         {
