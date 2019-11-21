@@ -53,12 +53,12 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             string title = "Add New Guest";
 
             MessageBox.Show(message, title);
-
         }
-
+        
         private void changeWeatherButton_Click(object sender, RoutedEventArgs e)
         {
             
+
         }
     }
 }
