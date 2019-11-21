@@ -56,7 +56,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         private void GuestsListView_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            Guestinfo Guestinfo = new Guestinfo();
+            GuestinfoWindow Guestinfo = new GuestinfoWindow();
             Guestinfo.Show();
         }
     }
