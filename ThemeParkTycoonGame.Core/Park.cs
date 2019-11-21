@@ -22,7 +22,9 @@ namespace ThemeParkTycoonGame.Core
         public ParkInventory ParkInventory;
         public decimal EntryFee;
 
+        public List<Employee> Employees;
         public EmployeeController EmployeeController;
+
         public GuestController GuestController;
 
         private string name;
@@ -67,6 +69,7 @@ namespace ThemeParkTycoonGame.Core
 
             desirables = new List<Desire>();
 
+            Employees = new List<Employee>();
             EmployeeController = new EmployeeController();
 
             GuestController = new GuestController(desirables, ref Guests);

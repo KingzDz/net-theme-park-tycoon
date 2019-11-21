@@ -6,41 +6,35 @@ namespace ThemeParkTycoonGame.Core
 {
     public class EmployeeController
     {
-        List<Employee> WorkerList = new List<Employee>();
+        List<Employee> WorkerList;
 
         bool hasTicked;
 
-        void AddEmployee(Employee employee)
-        {
-            WorkerList.Add(NewEmployee("excitement"));
-
-        }
-
-        Employee NewEmployee(string UniqueId)
+        /*public Employee NewEmployee(string UniqueId)
         {
             Employee worker = new Employee();
             worker.Function = "Performer";
             worker.Boost.StatType = StatTypes.GetByUniqueId(UniqueId);
             return worker;
-        }
+        }*/
 
         public void DoTick(int interval)
         {
-            Tick(interval);
+            //Tick(interval);
         }
 
         // Beetje overgenomen van GuestController. Dit zorgt dat Employee's elke seconde doen wat ze moeten doen.
-        public void Tick(int interval)
-        {
-            hasTicked = true;
+        //public void Tick(int interval)
+        //{
+        //    hasTicked = true;
 
-            foreach (Employee employee in WorkerList)
-            {
-                if (employee.Function == "Performer")
-                {
+        //    foreach (Employee employee in WorkerList)
+        //    {
+        //        if (employee.Function == "Performer")
+        //        {
                     
-                }
-            }
-        }
+        //        }
+        //    }
+        //}
     }  
 }

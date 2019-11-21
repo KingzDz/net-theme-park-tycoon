@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ThemeParkTycoonGame.Core
 {
-    class Employee
+    public class Employee
     {
         public string Name;
         public string Function;
