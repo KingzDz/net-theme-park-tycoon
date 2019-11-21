@@ -8,11 +8,8 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel>
         <Button x:Name="AddNewGuestButton" Content="Add New Guest Button" Height="64" Click="AddNewGuestButton_Click"></Button>
-        <Button x:Name="EditGuestButton" Click="EditGuestButton_Click" Height="64" Margin="0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch">Edit Guests</Button>
-<<<<<<< HEAD
+        <Button x:Name="EditGuestButton" Click="EditGuestButton_Click" Height="64">Edit Guests</Button>
+        <Button x:Name="changeWeatherButton"  Height="64" Click="changeWeatherButton_Click">Change Weather</Button>
     </StackPanel>
-=======
-        <Button x:Name="changeWeatherButton"  Height="64" Margin="0,64,0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" Click="changeWeatherButton_Click">Change Weather</Button>
-    </Grid>
->>>>>>> 5f244abda17f194820253aa475ad72d015b88a5d
+        
 </UserControl>

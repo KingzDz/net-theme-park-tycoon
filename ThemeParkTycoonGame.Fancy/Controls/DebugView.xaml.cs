@@ -41,7 +41,6 @@ namespace ThemeParkTycoonGame.Fancy.Controls
                 debugGuestView.BringIntoView();
             }
         }
-<<<<<<< HEAD
 
         private void AddNewGuestButton_Click(object sender, RoutedEventArgs e)
         {
@@ -54,11 +53,12 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             string title = "Add New Guest";
 
             MessageBox.Show(message, title);
-=======
+
+        }
+
         private void changeWeatherButton_Click(object sender, RoutedEventArgs e)
         {
             
->>>>>>> 5f244abda17f194820253aa475ad72d015b88a5d
         }
     }
 }
