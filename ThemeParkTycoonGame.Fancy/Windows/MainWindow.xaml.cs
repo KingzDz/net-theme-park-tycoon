@@ -46,6 +46,8 @@ namespace ThemeParkTycoonGame.Fancy.Windows
             // Give the guest information to the Guest Control
             guestsControl.Guests = this.park.Guests;
 
+            
+
             // This allows us to bind to every property in a park (like EntryFee, Name, Guests, etc)
             this.DataContext = this.park;
 
@@ -79,6 +81,11 @@ namespace ThemeParkTycoonGame.Fancy.Windows
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void parkControl_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
