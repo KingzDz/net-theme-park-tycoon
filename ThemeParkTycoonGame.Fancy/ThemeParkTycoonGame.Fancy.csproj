@@ -140,5 +140,68 @@
   <ItemGroup>
     <Resource Include="icon.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\worknroll.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kingdaka.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kraken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\platform934.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slotzilla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spacemountain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\startours.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\starwarscantina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\towerofterror.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voletarium.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ironmaiden.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloonhouse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beersouvenir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotdog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candyfloss.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fastandfurioussupercharged.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forumularossa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hoghwartsexpress.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinoarcade.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

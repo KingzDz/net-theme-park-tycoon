@@ -65,6 +65,16 @@ namespace ThemeParkTycoonGame.Forms
             var slotzilla = new Ride("Slotzilla", Properties.Resources.slotzilla, 25000, 5);
             var startours = new Ride("Star Tours", Properties.Resources.startours, 25000, 5);
             var fastandfurious = new Ride("Fast & Furious Supercharged", Properties.Resources.fastandfurioussupercharged, 25000, 5);
+            var hotdog = new Ride("Shop: HotDog Stand", Properties.Resources.hotdog, 25000, 5);
+            var minus5 = new Ride("Shop: Minus 5 Ice Bar", Properties.Resources.minus5, 25000, 5);
+            var candyfloss = new Ride("Shop: Candy Floss", Properties.Resources.candyfloss, 25000, 5);
+            var ironmaiden = new Ride("Shop: Iron Maiden", Properties.Resources.ironmaiden, 25000, 5);
+            var station934 = new Ride("Shop: Station 9 3/4", Properties.Resources.hoghwartsexpress, 25000, 5);
+            var workenroll = new Ride("Shop: Work & Roll", Properties.Resources.worknroll, 25000, 5);
+            var beerensouvenir = new Ride("Shop: Beer 'n Souvenir", Properties.Resources.beersouvenir, 25000, 5);
+            var balloonhouse = new Ride("Shop: Balloon House", Properties.Resources.balloonhouse, 25000, 5);
+            var starwarscatalina = new Ride("Shop: Star Wars Catalina", Properties.Resources.starwarscantina, 25000, 5);
+            var dinoarcade = new Ride("Shop: Dino Arcade", Properties.Resources.dinoarcade, 25000, 5);
 
 
 
@@ -84,7 +94,18 @@ namespace ThemeParkTycoonGame.Forms
                 formularossa,
                 slotzilla,
                 startours,
-                fastandfurious
+                fastandfurious,
+                hotdog,
+                minus5,
+                candyfloss,
+                ironmaiden,
+                station934,
+                workenroll,
+                beerensouvenir,
+                balloonhouse,
+                starwarscatalina,
+                dinoarcade,
+
             };
         }
     }
