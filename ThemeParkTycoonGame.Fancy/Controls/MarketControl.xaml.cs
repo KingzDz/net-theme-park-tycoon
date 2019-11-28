@@ -49,6 +49,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         private void StackPanel_Loaded(object sender, RoutedEventArgs e)
         {
+            balanceLabel.Content = "Balance: " + park.ParkWallet.Balance.ToString();
             RefreshRides();
         }
     }

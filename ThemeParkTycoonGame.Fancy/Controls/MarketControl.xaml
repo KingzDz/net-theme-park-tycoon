@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:ThemeParkTycoonGame.Fancy.Controls"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <StackPanel Orientation="Horizontal">
+    <StackPanel Orientation="Horizontal" Loaded="StackPanel_Loaded">
 
         
         
@@ -15,7 +15,7 @@
                 
             </ListView>
         </StackPanel>
-        <Label x:Name="balanceLabel" HorizontalAlignment="Right" VerticalAlignment="Top"></Label>
+        <Label x:Name="balanceLabel" HorizontalAlignment="Right" VerticalAlignment="Top">Balance: </Label>
         <StackPanel Width="150" Height="450">
             
             
