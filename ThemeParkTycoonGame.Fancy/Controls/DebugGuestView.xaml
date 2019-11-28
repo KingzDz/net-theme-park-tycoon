@@ -7,8 +7,11 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <TextBox Name="GuestNameTextBox" Text="{Binding Path=guestName}" Background="Black" TextAlignment="Center" FontSize="16" Foreground="White" Height="32" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="240,0,280,-0.4"/>
+        <ListView ItemsSource="{Binding Path=Guests}"
+                  x:Name="guestsListView" VerticalAlignment ="Bottom" Margin="0,34" Height="128">
+        </ListView>
+        <TextBox Name="GuestNameTextBox" Text="{Binding Path=guestName}" Background="White" TextAlignment="Center" FontSize="16" Foreground="Black" Height="32" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="240,0,280,-0.4"/>
         <Button x:Name="ChangeNameButton" Click="ChangeNameButton_Click" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width ="240" Height="32">Change Name</Button>
-        <Label x:Name="GuestStatLabel" Content="{Binding guestName}" Background="Black" FontSize="16" Foreground="White" Height="32" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,0,-0.4" Width="275" ></Label>
+        <Label x:Name="GuestStatLabel" Content="{Binding guestName}" Background="White" FontSize="16" Foreground="Black" Height="32" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,0,-0.4" Width="275" ></Label>
     </Grid>
 </UserControl>

@@ -22,8 +22,10 @@ namespace ThemeParkTycoonGame.Fancy.Controls
     /// </summary>
     public partial class DebugView : UserControl
     {
+        public GuestController guestController;
         public GuestList guests;
         public DebugGuestView debugGuestView;
+
         
         public DebugView()
         {
@@ -31,16 +33,29 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             debugGuestView = new DebugGuestView();
             controlParent.Children.Add(debugGuestView);
             controlParent.Visibility = Visibility.Hidden;
+            debugGuestView.debugView = this;
+           
         }
+    
 
-        private void EditGuestButton_Click(object sender, RoutedEventArgs e)
+            private void EditGuestButton_Click(object sender, RoutedEventArgs e)
         {
             if(guests.Guests.Count>0)
             {
+           
+               try
+                {
 
-                debugGuestView.guestName = guests.Guests[0].Name;
-                MessageBox.Show(debugGuestView.guestName);
+                    
+                    debugGuestView.guestsListView.Items.Refresh();
+                }
+                catch
+                {
+                    MessageBox.Show("Pick a guest, please");
+                }
+              
                 controlParent.Visibility = Visibility.Visible;
+               
             }
         }
 
@@ -61,6 +76,18 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         {
             
 
+        }
+
+        private void RefreshGuestListButton_Click(object sender, RoutedEventArgs e)
+        {
+            debugGuestView.guestsListView.Items.Clear();
+            for (int i = 0; i < guests.Count(); i++)
+            {
+                debugGuestView.guestsListView.Items.Add(guests.Guests[i]);
+                debugGuestView.guestsListView.Items.Refresh();
+                //guests.Guests[0].Name = "Fucker";
+            }
+            debugGuestView.guestsListView.Items.Refresh();
         }
     }
 }

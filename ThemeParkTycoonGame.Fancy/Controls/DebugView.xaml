@@ -9,7 +9,7 @@
     <StackPanel>
         <Button x:Name="AddNewGuestButton" Content="Add New Guest Button" Height="64" Click="AddNewGuestButton_Click"></Button>
         <Button x:Name="EditGuestButton" Click="EditGuestButton_Click" Height="64" Margin="0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch">Edit Guests</Button>
-
+        <Button x:Name="RefreshGuestListButton" Click="RefreshGuestListButton_Click" Height="64" Margin="0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch">RefreshGuests</Button>
         <StackPanel x:Name="controlParent"></StackPanel>
 
 

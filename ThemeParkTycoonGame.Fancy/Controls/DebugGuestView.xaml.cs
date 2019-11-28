@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using ThemeParkTycoonGame.Core;
 namespace ThemeParkTycoonGame.Fancy.Controls
 {
     /// <summary>
@@ -21,15 +21,31 @@ namespace ThemeParkTycoonGame.Fancy.Controls
     public partial class DebugGuestView : UserControl
     {
         public string guestName;
+        public DebugView debugView;
+
         public DebugGuestView()
         {
             
             InitializeComponent();
+            GuestStatLabel.Content = guestName;
         }
 
         private void ChangeNameButton_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                guestName = GuestNameTextBox.Text;
+                GuestStatLabel.Content = guestName;
+                debugView.guests.Guests[guestsListView.SelectedIndex].Name = guestName;
 
+
+
+            }
+            catch
+            {
+                
+                MessageBox.Show("Invalid Input Detected");
+            }
         }
     }
 }
