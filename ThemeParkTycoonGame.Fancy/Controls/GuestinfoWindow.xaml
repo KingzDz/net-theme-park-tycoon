@@ -23,8 +23,18 @@
             </StackPanel>
         </GroupBox>
         <GroupBox Header="Financial History">
-            <StackPanel>
-                <Label>kaas</Label>
+            <StackPanel Orientation="vertical">
+                <Border BorderBrush="Gray" BorderThickness="1" Margin="0,8,0,0">
+                <StackPanel Orientation="Horizontal">
+                        <Label Margin="0,0,0,5">Balance Changed</Label>
+                        <Label Margin="0,0,0,5">Time of Transaction</Label>
+                        <Label Margin="0,0,0,5">Description</Label>
+                </StackPanel>
+                </Border>
+                <StackPanel Orientation="Vertical">
+                    <ListView x:Name="ListView" Height="100px">
+                    </ListView>
+                </StackPanel>
             </StackPanel>
         </GroupBox>
 
