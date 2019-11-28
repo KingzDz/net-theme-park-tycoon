@@ -7,8 +7,14 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <ListView x:Name="employeeListView">
-
+        <Button x:Name="addEmployeeButton" Content="Werknemers toevoegen'" HorizontalAlignment="Left" Margin="30,299,0,0" Grid.Row="1" VerticalAlignment="Top" Width="145" Click="AddEmployeeButton_Click"/>
+        <Button Content="wijzigen" HorizontalAlignment="Left" Margin="265,299,0,0" Grid.Row="1" VerticalAlignment="Top" Width="125"/>
+        <ListView x:Name="employeeListView" HorizontalAlignment="Left" Height="235" Margin="30,44,0,0" Grid.Row="1" VerticalAlignment="Top" Width="360">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
         </ListView>
 
     </Grid>
