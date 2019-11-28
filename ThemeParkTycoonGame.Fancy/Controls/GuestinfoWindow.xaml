@@ -6,9 +6,14 @@
         xmlns:local="clr-namespace:ThemeParkTycoonGame.Fancy.Controls"
         mc:Ignorable="d"
         Title="GuestinfoWindow" Height="450" Width="800" Loaded="Window_Loaded">
-    <Grid>
-        <Label x:Name="Labeltje">
-            
-        </Label>
-    </Grid>
+    <StackPanel>
+        <Label>Financial:</Label>
+        <StackPanel Orientation="Horizontal">
+            <Label>€</Label>
+            <Label x:Name="balanceLabel"></Label>
+        </StackPanel>
+        <StackPanel>
+            <ListView x:Name="financialHistory"></ListView>
+        </StackPanel>
+    </StackPanel>
 </Window>
