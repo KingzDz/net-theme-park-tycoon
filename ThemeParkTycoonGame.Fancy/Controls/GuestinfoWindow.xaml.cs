@@ -26,32 +26,50 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             InitializeComponent();
 
             this.guest = selectedGuest;
+
+            //RefreshStats();
+        }
+        private void RefreshStats()
+        {
+            wantingRideSlider.Value = RandomPercentage();
+            excitementSlider.Value = RandomPercentage();
+            hungerSlider.Value = RandomPercentage();
+            thirstSlider.Value = RandomPercentage();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            balanceLabel.Content = guest.Wallet.Balance;
+            this.Title = guest.Name;
         }
 
-        private void RefreshFinances()
+        //private void RefreshFinances()
+        //{
+        //    // clear the panel
+        //    financialHistory.Items.Clear();
+
+        //    foreach (TransactionLog log in this.guest.Wallet.History)
+        //    {
+
+        //        ListViewItem temp = new ListViewItem();
+
+        //        financialHistory.Items.Add(temp);
+
+
+        //        //new string[] {
+        //        //    (-log.Amount).ToString(),
+        //        //    log.Time.ToString(),
+        //        //    log.Reason,
+        //        //}));
+        //    }
+        //}
+
+        private double RandomPercentage()
         {
-            // clear the panel
-            financialHistory.Items.Clear();
+            Random random = new Random();
+            double decimalNumber = (double) random.Next(0, 10);
+            
 
-            foreach (TransactionLog log in this.guest.Wallet.History)
-            {
-
-                ListViewItem temp = new ListViewItem();
-
-                financialHistory.Items.Add(temp);
-
-
-                new string[] {
-                    (-log.Amount).ToString(),
-                    log.Time.ToString(),
-                    log.Reason,
-                }));
-            }
+            return decimalNumber;
         }
     }
 }
