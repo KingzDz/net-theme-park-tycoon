@@ -23,6 +23,13 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         public ShopView()
         {
             InitializeComponent();
+
+            List<string> shops = new List<string>();
+            shops.Add("test");
+            shops.Add("test2");
+            shops.Add("test3");
+            shops.Add("test4");
+            shops.Add("test5");
         }
 
         private void CreateProductButton_Click(object sender, RoutedEventArgs e)
