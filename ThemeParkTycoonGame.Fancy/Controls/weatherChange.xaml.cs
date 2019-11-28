@@ -23,5 +23,14 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         {
             InitializeComponent();
         }
+
+        private void WeatherChangeButton_Click(object sender, RoutedEventArgs e)
+        {
+            string[] weathers = { "rain", "storm", "sun" };
+            Random rand = new Random();
+            int index = rand.Next(weathers.Length);
+
+            MessageBox.Show(weathers[index]);
+        }
     }
 }

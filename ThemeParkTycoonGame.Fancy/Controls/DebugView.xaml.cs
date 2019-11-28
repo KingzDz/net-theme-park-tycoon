@@ -60,7 +60,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         private void changeWeatherButton_Click(object sender, RoutedEventArgs e)
         {
             weatherChange weather = new weatherChange();
-            weather.ShowDialog();
+            weather.Show();
         }
     }
 }
