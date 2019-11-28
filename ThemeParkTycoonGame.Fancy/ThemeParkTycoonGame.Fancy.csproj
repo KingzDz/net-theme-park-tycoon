@@ -62,7 +62,7 @@
     </ApplicationDefinition>
     <Compile Include="Controls\GuestinfoWindow.xaml.cs">
       <DependentUpon>GuestinfoWindow.xaml</DependentUpon>
-  </Compile>
+    </Compile>
     <Compile Include="Controls\FinancialView.xaml.cs">
       <DependentUpon>FinancialView.xaml</DependentUpon>
     </Compile>
@@ -80,15 +80,13 @@
     </Compile>
     <Compile Include="WpfHelper.cs" />
     <Page Include="Controls\GuestinfoWindow.xaml">
-    	<SubType>Designer</SubType>
+      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-
     <Page Include="Controls\FinancialView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-
     <Page Include="Controls\EmployeeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
