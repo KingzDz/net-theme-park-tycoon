@@ -24,5 +24,11 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         {
             InitializeComponent();
         }
+
+        private void CreateProductButton_Click(object sender, RoutedEventArgs e)
+        {
+            product product = new product();
+            product.Show();
+        }
     }
 }

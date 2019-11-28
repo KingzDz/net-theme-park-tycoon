@@ -17,11 +17,26 @@ namespace ThemeParkTycoonGame.Fancy.Controls
     /// <summary>
     /// Interaction logic for Buyshop.xaml
     /// </summary>
-    public partial class Buyshop : Window
+    public partial class Item : Window
+   
     {
-        public Buyshop()
+        public Item(List<item> items)
         {
             InitializeComponent();
+
         }
+        private void addProductConfirmButton_Click(object sender, EventArgs e)
+        {
+            item = new item();
+
+            item.Name = itemNameTextBox.Text;
+            item.Description = itemDescriptionTextBox.Text;
+            item.Price = itemPriceTextBox.Text;
+
+            itemData = item;
+            this.Close();
+        }
+
     }
+
 }

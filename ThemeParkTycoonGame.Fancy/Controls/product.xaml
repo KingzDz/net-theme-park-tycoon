@@ -1,0 +1,21 @@
+﻿<Window x:Class="ThemeParkTycoonGame.Fancy.Controls.product"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThemeParkTycoonGame.Fancy.Controls"
+        mc:Ignorable="d"
+        Title="product" Height="350" Width="400">
+    <Grid>
+        <Label Name="nameLabel" VerticalAlignment="Top" Margin="0 0 0 0">Name:</Label>
+        <TextBox Name="nameTextBox" Height="50px" Width="100px" VerticalAlignment="Top" HorizontalAlignment="Center"></TextBox>
+        <Label Name="pictureLabel" VerticalAlignment="Top" Margin="0 25px 0 0">Picture:</Label>
+        <Button Width="50px" Height="50px" VerticalAlignment="Top" HorizontalAlignment="Center"></Button>
+        <Label Name="priceLabel" VerticalAlignment="Top" Margin="0 50px 0 0">Price:</Label>
+        <Label Name="statsLabel" VerticalAlignment="Top" Margin="0 100px 0 0">Stats:</Label>
+        <ListBox Name="statListBox" Height="160px" Width="285px" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="0 0 0 25px"></ListBox>
+        <Button Height="50px" Width="100px" Name="addStatButton" VerticalAlignment="Center" HorizontalAlignment="Right">Add Stat</Button>
+        <Button Height="50px" Width="100px" VerticalAlignment="Center" HorizontalAlignment="Right" Name="removeStatButton" Margin="0 150px 0 0">Remove Stat</Button>
+        <Button Height="25px" VerticalAlignment="Bottom" Name="addProductButton">Create new product love </Button>
+    </Grid>
+</Window>

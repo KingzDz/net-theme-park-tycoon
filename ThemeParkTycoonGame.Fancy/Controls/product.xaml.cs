@@ -15,26 +15,13 @@ using System.Windows.Shapes;
 namespace ThemeParkTycoonGame.Fancy.Controls
 {
     /// <summary>
-    /// Interaction logic for ShopsView.xaml
+    /// Interaction logic for product.xaml
     /// </summary>
-    public partial class ShopsView : Window
+    public partial class product : Window
     {
-        public Item(List<item> items)
+        public product()
         {
             InitializeComponent();
-
-        }
-        private void addProductConfirmButton_Click(object sender, EventArgs e)
-        {
-            item = new item();
-
-            item.Name = itemNameTextBox.Text;
-            item.Description = itemDescriptionTextBox.Text;
-            item.Price = itemPriceTextBox.Text;
-
-            itemData = item;
-            this.Close();
         }
     }
 }
-
