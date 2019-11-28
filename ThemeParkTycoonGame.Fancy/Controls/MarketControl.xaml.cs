@@ -35,16 +35,19 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             InitializeComponent();
         }
 
-        private void MarketButton_Click(object sender, RoutedEventArgs e)
-        {
-            RefreshRides();
-        }
-
         private void RefreshRides()
         {
             Marketplace marketplace = Marketplace.Instance;
             List<Ride> buyableRides = marketplace.GetBuyableRides(park.ParkInventory);
-            Testblock1.Text = buyableRides[0].Name;
+            for (int i = 0; i < buyableRides.Count(); i++)
+            {
+                ShopList.Items.Add(buyableRides[i].Name);
+            }
+        }
+
+        private void StackPanel_Loaded(object sender, RoutedEventArgs e)
+        {
+            RefreshRides();
         }
     }
 }
