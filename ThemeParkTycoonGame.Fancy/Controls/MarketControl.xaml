@@ -17,8 +17,11 @@
                 <Button x:Name="MarketButton" Click="MarketButton_Click"></Button>
             </StackPanel>
         </StackPanel>
-        <StackPanel Width="150" Height="450">
             
-        </StackPanel>
+        <StackPanel Width="150" Height="450">
     </StackPanel>
+        </StackPanel>
+        <Label x:Name="balanceLabel">
+           Dit is balance
+        </Label>
 </UserControl>

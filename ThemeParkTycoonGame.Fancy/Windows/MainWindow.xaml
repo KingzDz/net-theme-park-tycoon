@@ -37,7 +37,7 @@
                 </TabItem>
 
                 
-                <TabItem>
+                <TabItem Height="23" Margin="-2.4,-2,-2.4,-0.2" VerticalAlignment="Top">
                     <TabItem.Header>
                         <StackPanel Orientation="Horizontal">
                             <Image Source="pack://siteoforigin:,,,/Resources/guests_48.png"

@@ -33,6 +33,8 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         public MarketControl()
         {
             InitializeComponent();
+            ParkDetailsView parkDetails = new ParkDetailsView();
+            park = parkDetails.Park;
         }
 
         private void MarketButton_Click(object sender, RoutedEventArgs e)
