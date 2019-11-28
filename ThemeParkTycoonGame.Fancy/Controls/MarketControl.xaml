@@ -7,6 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel Orientation="Horizontal">
+
+        
+        
         <StackPanel Width="650" Height="450">
             <StackPanel x:Name="ShopList">
                 <TextBlock x:Name="Testblock1"></TextBlock>
@@ -17,11 +20,11 @@
                 <Button x:Name="MarketButton" Click="MarketButton_Click"></Button>
             </StackPanel>
         </StackPanel>
-            
+        <Label x:Name="balanceLabel" HorizontalAlignment="Right" VerticalAlignment="Top"></Label>
         <StackPanel Width="150" Height="450">
+            
+            
     </StackPanel>
         </StackPanel>
-        <Label x:Name="balanceLabel">
-           Dit is balance
-        </Label>
+
 </UserControl>

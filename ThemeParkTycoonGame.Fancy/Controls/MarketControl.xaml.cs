@@ -47,6 +47,9 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             Marketplace marketplace = Marketplace.Instance;
             List<Ride> buyableRides = marketplace.GetBuyableRides(park.ParkInventory);
             Testblock1.Text = buyableRides[0].Name;
+
+
+            balanceLabel.Content = "Balance: " + park.ParkWallet.Balance.ToString();
         }
     }
 }
