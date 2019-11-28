@@ -11,12 +11,9 @@
         <Button x:Name="EditGuestButton" Click="EditGuestButton_Click" Height="64" Margin="0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch">Edit Guests</Button>
 
         <Button x:Name="RefreshGuestListButton" Click="RefreshGuestListButton_Click" Height="64" Margin="0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch">RefreshGuests</Button>
+        <Button x:Name="changeWeatherButton"  Height="64" Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" Click="changeWeatherButton_Click" Content="Change Weather"/>
         <StackPanel x:Name="controlParent"></StackPanel>
 
-
-        <Button x:Name="changeWeatherButton"  Height="64" Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" Click="changeWeatherButton_Click" Content="Change Weather"/>
-        
-    
     </StackPanel>
 
 </UserControl>
