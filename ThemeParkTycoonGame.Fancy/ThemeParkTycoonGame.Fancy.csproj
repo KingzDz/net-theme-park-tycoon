@@ -63,6 +63,12 @@
     <Compile Include="Controls\DebugGuestView.xaml.cs">
       <DependentUpon>DebugGuestView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\FinancialView.xaml.cs">
+      <DependentUpon>FinancialView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EmployeeView.xaml.cs">
+      <DependentUpon>EmployeeView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\DebugView.xaml.cs">
       <DependentUpon>DebugView.xaml</DependentUpon>
     </Compile>
@@ -77,6 +83,18 @@
     </Compile>
     <Compile Include="WpfHelper.cs" />
     <Page Include="Controls\DebugGuestView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="Controls\ShopView.xaml.cs">
+      <DependentUpon>ShopView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfHelper.cs" />
+    <Page Include="Controls\FinancialView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\EmployeeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -97,6 +115,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\weatherChange.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ShopView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

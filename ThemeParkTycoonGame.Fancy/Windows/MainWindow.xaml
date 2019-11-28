@@ -32,7 +32,7 @@
                             <TextBlock Text="Park" Foreground="Blue" />
                         </StackPanel>
                     </TabItem.Header>
-                    
+
                     <controls:ParkDetailsView x:Name="parkControl"/>
                 </TabItem>
 
@@ -46,6 +46,19 @@
                     </TabItem.Header>
 
                     <controls:GuestsView x:Name="guestsControl"/>
+                </TabItem>
+
+                <TabItem>
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal">
+
+                            <Image Source="pack://siteoforigin:,,,/Resources/stats_48.png"
+                                   Height="16"/>
+                            <TextBlock Text="Financial" Foreground="Blue" />
+                        </StackPanel>
+                    </TabItem.Header>
+
+                    <controls:FinancialView x:Name="financialControl"/>
                 </TabItem>
 
                 <TabItem>
@@ -65,11 +78,23 @@
                         <StackPanel Orientation="Horizontal">
                             <Image Source="pack://siteoforigin:,,,/Resources/worker_48.png"
                                    Height="16"/>
-                            <TextBlock Text="Employee" Foreground="Blue" />
+                            <TextBlock Text="Shop" Foreground="Blue" />
                         </StackPanel>
                     </TabItem.Header>
 
-                   
+                    <controls:ShopView x:Name="ShopControl"/>
+                </TabItem>
+                
+                <TabItem>
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="pack://siteoforigin:,,,/Resources/worker_48.png"
+                                   Height="16"/>
+                            <TextBlock Text="Employee" Foreground="Blue" />
+                        </StackPanel>
+                    </TabItem.Header>
+                    
+                    <controls:EmployeeView x:Name="employeeControl"/>
                 </TabItem>
 
                 <TabItem>
@@ -82,8 +107,11 @@
                     </TabItem.Header>
 
                     <controls:DebugView x:Name="debugControl"/>
+
                 </TabItem>
             </TabControl>
         </Grid>
+
+
     </Grid>
 </Window>
