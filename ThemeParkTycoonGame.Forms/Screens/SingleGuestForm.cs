@@ -53,6 +53,7 @@ namespace ThemeParkTycoonGame.Forms.Screens
             int numDesires = 0;
 
             foreach (Desire desire in this.guest.Desires)
+
             {
                 DesireLabel label = new DesireLabel(desire);
                 label.Top = numDesires++ * label.Height;

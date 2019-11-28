@@ -58,7 +58,6 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         {
             Guest selectedGuest = (Guest)guestsListView.SelectedItems;
 
-
             GuestinfoWindow Guestinfo = new GuestinfoWindow(selectedGuest);
             Guestinfo.Show();
         }
