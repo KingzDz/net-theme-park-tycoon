@@ -12,17 +12,39 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ThemeParkTycoonGame.Core;
 
 namespace ThemeParkTycoonGame.Fancy.Controls
 {
-    /// <summary>
-    /// Interaction logic for MarketControl.xaml
-    /// </summary>
     public partial class MarketControl : UserControl
     {
+        private Park park;
+        public Park Park
+        {
+            get
+            {
+                return park;
+            }
+            set
+            {
+                park = value;
+            }
+        }
         public MarketControl()
         {
             InitializeComponent();
+        }
+
+        private void MarketButton_Click(object sender, RoutedEventArgs e)
+        {
+            RefreshRides();
+        }
+
+        private void RefreshRides()
+        {
+            Marketplace marketplace = Marketplace.Instance;
+            List<Ride> buyableRides = marketplace.GetBuyableRides(park.ParkInventory);
+            Testblock1.Text = buyableRides[0].Name;
         }
     }
 }
