@@ -60,6 +60,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controls\DebugGuestView.xaml.cs">
+      <DependentUpon>DebugGuestView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\FinancialView.xaml.cs">
       <DependentUpon>FinancialView.xaml</DependentUpon>
     </Compile>
@@ -75,10 +78,17 @@
     <Compile Include="Controls\MarketControl.xaml.cs">
       <DependentUpon>MarketControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\weatherChange.xaml.cs">
+      <DependentUpon>weatherChange.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfHelper.cs" />
+    <Page Include="Controls\DebugGuestView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Compile Include="Controls\ShopView.xaml.cs">
       <DependentUpon>ShopView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WpfHelper.cs" />
     <Page Include="Controls\FinancialView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -100,6 +110,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\ParkDetailsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\weatherChange.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
