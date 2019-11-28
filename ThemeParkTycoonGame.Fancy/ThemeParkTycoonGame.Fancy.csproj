@@ -89,7 +89,6 @@
     <Compile Include="Controls\ShopView.xaml.cs">
       <DependentUpon>ShopView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WpfHelper.cs" />
     <Page Include="Controls\FinancialView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -38,7 +38,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         }
     
 
-            private void EditGuestButton_Click(object sender, RoutedEventArgs e)
+        private void EditGuestButton_Click(object sender, RoutedEventArgs e)
         {
             if(guests.Guests.Count>0)
             {
