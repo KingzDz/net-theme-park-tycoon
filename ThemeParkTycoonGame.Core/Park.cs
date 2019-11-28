@@ -70,7 +70,7 @@ namespace ThemeParkTycoonGame.Core
             desirables = new List<Desire>();
 
             Employees = new List<Employee>();
-            EmployeeController = new EmployeeController();
+            EmployeeController = new EmployeeController(this);
 
             GuestController = new GuestController(desirables, ref Guests);
             GuestController.MinimumCash = EntryFee; // TODO: when entryfee changes, this MinimumCash needs to as well.
