@@ -7,13 +7,34 @@
         mc:Ignorable="d"
         Title="GuestinfoWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <StackPanel>
-        <Label>Financial:</Label>
+        <GroupBox Header="Status">
+            <StackPanel>
+                <Label>kaas</Label>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Ride History">
+            <StackPanel>
+                <Label>kaas</Label>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Desires">
+            <StackPanel>
+                <Label>kaas</Label>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Financial History">
+            <StackPanel>
+                <Label>kaas</Label>
+            </StackPanel>
+        </GroupBox>
+
+        <!--<Label>Financial:</Label>
         <StackPanel Orientation="Horizontal">
             <Label>€</Label>
             <Label x:Name="balanceLabel"></Label>
         </StackPanel>
         <StackPanel>
             <ListView x:Name="financialHistory"></ListView>
-        </StackPanel>
+        </StackPanel>-->
     </StackPanel>
 </Window>
