@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using ThemeParkTycoonGame.Core;
 
 namespace ThemeParkTycoonGame.Fancy.Controls
 {
@@ -29,7 +30,28 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Labeltje.Content = guest.Name;
+            balanceLabel.Content = guest.Wallet.Balance;
+        }
+
+        private void RefreshFinances()
+        {
+            // clear the panel
+            financialHistory.Items.Clear();
+
+            foreach (TransactionLog log in this.guest.Wallet.History)
+            {
+
+                ListViewItem temp = new ListViewItem();
+
+                financialHistory.Items.Add(temp);
+
+
+                new string[] {
+                    (-log.Amount).ToString(),
+                    log.Time.ToString(),
+                    log.Reason,
+                }));
+            }
         }
     }
 }
