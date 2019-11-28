@@ -55,6 +55,18 @@ namespace ThemeParkTycoonGame.Forms
             var python = new Ride("Python", Properties.Resources.efteling_python, 10000, 5, GetStatBoostsForPython());
             var robinHood = new Ride("Robin Hood", Properties.Resources.walibi_robin_hood, 15000, 20);
             var vogelRok = new Ride("Vogel Rok", Properties.Resources.efteling_vogelrok, 15000, 15);
+            var kraken = new Ride("Kraken", Properties.Resources.kraken, 25000, 5);
+            var towerofterror = new Ride("Tower of Terror", Properties.Resources.towerofterror, 25000, 5);
+            var spacemountain = new Ride("Space Mountain", Properties.Resources.spacemountain, 25000, 5);
+            var hoghwartsexpress = new Ride("Hoghwarts Express", Properties.Resources.hoghwartsexpress, 25000, 5);
+            var voletarium = new Ride("Voletarium", Properties.Resources.voletarium, 25000, 5);
+            var kingdaka = new Ride("Kingda Ka", Properties.Resources.kingdaka, 25000, 5);
+            var formularossa = new Ride("Formula Rossa", Properties.Resources.forumularossa, 25000, 5);
+            var slotzilla = new Ride("Slotzilla", Properties.Resources.slotzilla, 25000, 5);
+            var startours = new Ride("Star Tours", Properties.Resources.startours, 25000, 5);
+            var fastandfurious = new Ride("Fast & Furious Supercharged", Properties.Resources.fastandfurioussupercharged, 25000, 5);
+
+
 
             Rides.All = new List<Ride>()
             {
@@ -63,6 +75,16 @@ namespace ThemeParkTycoonGame.Forms
                 python,
                 robinHood,
                 vogelRok,
+                kraken,
+                towerofterror,
+                spacemountain,
+                hoghwartsexpress,
+                voletarium,
+                kingdaka,
+                formularossa,
+                slotzilla,
+                startours,
+                fastandfurious
             };
         }
     }
