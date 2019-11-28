@@ -26,31 +26,36 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             InitializeComponent();
 
             this.guest = selectedGuest;
+
+            this.guest.Wallet.BalanceChanged += (s, ev) =>
+            {
+                RefreshFinances();
+            };
+
+
+            RefreshFinances();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            balanceLabel.Content = guest.Wallet.Balance;
+            // balanceLabel.Content = guest.Wallet.Balance;
+
+          
         }
 
         private void RefreshFinances()
         {
             // clear the panel
-            financialHistory.Items.Clear();
+            // financialHistory.Items.Clear();
 
-            foreach (TransactionLog log in this.guest.Wallet.History)
+            foreach (TransactionLog log in this.guest.Wallet.History.ToList())
             {
-
+                
                 ListViewItem temp = new ListViewItem();
 
-                financialHistory.Items.Add(temp);
 
+                guest.Wallet.History.Add(log);
 
-                new string[] {
-                    (-log.Amount).ToString(),
-                    log.Time.ToString(),
-                    log.Reason,
-                }));
             }
         }
     }

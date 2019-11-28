@@ -24,7 +24,7 @@
         </GroupBox>
         <GroupBox Header="Financial History">
             <StackPanel>
-                <Label>kaas</Label>
+                <ListView x:Name="financialHistory"></ListView>
             </StackPanel>
         </GroupBox>
 
