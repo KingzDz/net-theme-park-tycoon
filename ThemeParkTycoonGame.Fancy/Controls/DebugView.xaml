@@ -16,7 +16,7 @@
 
         <Button x:Name="changeWeatherButton"  Height="64" Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" Click="changeWeatherButton_Click" Content="Change Weather"/>
         
-        <StackPanel x:Name="controlParent"></StackPanel>
+    
     </StackPanel>
 
 </UserControl>
