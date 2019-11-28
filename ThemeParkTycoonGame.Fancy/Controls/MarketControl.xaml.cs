@@ -45,6 +45,15 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             }
         }
 
+        private void listView_Click(object sender, RoutedEventArgs e)
+        {
+            var item = (sender as ListView).SelectedItem;
+            if (item != null)
+            {
+                MessageBox.Show(item.ToString());
+            }
+        }
+
         private void StackPanel_Loaded(object sender, RoutedEventArgs e)
         {
             RefreshRides();
