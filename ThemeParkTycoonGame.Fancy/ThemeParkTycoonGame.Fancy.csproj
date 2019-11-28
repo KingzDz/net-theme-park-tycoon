@@ -72,6 +72,9 @@
     <Compile Include="Controls\MarketControl.xaml.cs">
       <DependentUpon>MarketControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\weatherChange.xaml.cs">
+      <DependentUpon>weatherChange.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WpfHelper.cs" />
     <Page Include="Controls\DebugGuestView.xaml">
       <SubType>Designer</SubType>
@@ -90,6 +93,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\ParkDetailsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\weatherChange.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
