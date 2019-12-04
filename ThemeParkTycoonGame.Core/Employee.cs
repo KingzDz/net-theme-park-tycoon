@@ -18,7 +18,10 @@ namespace ThemeParkTycoonGame.Core
         public Employee()
         {
             Name = NameGenerator.NextName();
-                       
+
+            Boost.StatType = StatTypes.GetByUniqueId("excitement");
+            Boost.Multiplier = 1.25f;
+            Boost.Duration = 60;
         }
 
     }

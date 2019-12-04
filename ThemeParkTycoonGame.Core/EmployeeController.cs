@@ -37,6 +37,7 @@ namespace ThemeParkTycoonGame.Core
         // Beetje overgenomen van GuestController. Dit zorgt dat Employee's elke seconde doen wat ze moeten doen.
         public void Tick(int interval)
         {
+            // Betaal de werknemer
             hasTicked = true;
 
             if (timeTick < 60)
@@ -49,24 +50,38 @@ namespace ThemeParkTycoonGame.Core
                 timeTick = 0;
             }
 
+            // Werknemers doen hun werk
             foreach (Employee employee in WorkerList)
             {
                 if (employee.Function == "Performer")
                 {
-                    PerformerAction();
+                    PerformerAction(employee);
+                }
+
+                else if(employee.Function == "Maintenance")
+                {
+                    MaintenanceAction(employee);
                 }
             }
         }
 
-        public void PerformerAction()
+        // alle Performer-werknemers geven een boost aan de excitement van de Guests
+        public void PerformerAction(Employee employee)
         {
             foreach (Guest guest in Park.Guests)
             {
-                if (rng.Next(0, 6) == 0 && (guest.CurrentStats[1].Value + 4) < StatTypes.MAX_STAT)
+                if (rng.Next(0, 6) == 0 && (guest.CurrentStats[1].Value * employee.Boost.Multiplier) < StatTypes.MAX_STAT)
                 {
-                    guest.CurrentStats[1].Value += 4;
+                    guest.CurrentStats[1].Value *= employee.Boost.Multiplier;
                     Console.WriteLine(guest.Name + " | " + guest.CurrentStats[1].Type.Name + ": " + guest.CurrentStats[1].Value);
                 }
+            }
+        }
+        public void MaintenanceAction(Employee employee)
+        {
+            foreach (Ride ride in Park.ParkInventory.Rides)
+            {
+                // doet nog niks
             }
         }
     }  
