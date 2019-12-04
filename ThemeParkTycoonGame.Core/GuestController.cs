@@ -16,7 +16,7 @@ namespace ThemeParkTycoonGame.Core
 
         private GuestList targetGuests;
         private bool hasTicked;
-
+     
         private System.Timers.Timer warningTimer; // Code support
 
         public decimal MinimumCash; // Minimum cash a guest will have EntryFee for example
@@ -38,12 +38,14 @@ namespace ThemeParkTycoonGame.Core
         public void DoTick(int interval)
         {
             Tick(interval);
+         
         }
 
         // A tick is a 'think' and as seen in the Start() methode happens at 1000ms intervals
         private void Tick(int interval)
         {
             hasTicked = true;
+        
 
             /*
              * Test script to make everyone go to the python
