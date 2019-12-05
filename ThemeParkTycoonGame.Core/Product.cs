@@ -4,7 +4,7 @@
     {
         public string Name { get; }
         public string Description { get; }
-        public decimal Price { get; }
+        public double Price { get; }
 
         public Product()
         {
@@ -14,7 +14,7 @@
 
         }
 
-        public Product(string name, string description, decimal price)
+        public Product(string name, string description, double price)
             : this()
         {
             Name = name;

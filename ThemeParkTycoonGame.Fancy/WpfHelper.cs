@@ -55,7 +55,13 @@ namespace ThemeParkTycoonGame.Fancy
         {
             Products.All = new List<Product>()
             {
-                new Product("hamburger", "Hamburger met vlees, zeer lekker voor als je honger hebt", 4)
+                new Product("hamburger", "Hamburger met vlees, zeer lekker voor als je honger hebt", 4),
+                new Product("Friet", "Franse Friet met of zonder saus", 1.43),
+                new Product("Cola", "Frisdrank", 1.75),
+                new Product("Hondenvoer", "Te koop voor Wicher", 10),
+                new Product("Suikerspin", "Gemaakt van Suiker", 2.50),
+                new Product("Knuffelbeer", "Lekker warme Knuffelbeer", 1.50),
+                new Product("Citroen Ijsje", "Voor het warme weer", 2.50)
             };
         }
     }

@@ -24,18 +24,18 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         public ShopView()
         {
             InitializeComponent();
-
             foreach (Product product in Products.All)
             {
-                //productLabel.Content += product.Name;
-                
+                ProductList.Children.Add(new Label()
+                {
+                    Content = product.Name
+                });
             }
-        }
-
-        private void productListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
 
         }
+
+        
+
 
         private void CreateProductButton_Click(object sender, RoutedEventArgs e)
         {
