@@ -94,6 +94,12 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             debugGuestView.guestsListView.Items.Refresh();
         }
 
+        private void AddMoneyButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Park.ParkWallet.SubtractFromBalance(-10000, "A mysterious being gave the park money.");
+            MessageBox.Show("your balance is now: " + Park.ParkWallet.balance.ToString());
+        }
+
         private void AddThousandButton_Click(object sender, RoutedEventArgs e)
         {
             

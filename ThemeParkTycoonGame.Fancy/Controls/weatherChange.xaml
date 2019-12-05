@@ -8,7 +8,7 @@
         Title="weatherChange" Height="190" Width="400">
     <Grid>
         <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Image Height="50" Width="50" Source="Recources/weather_snow_48.png"></Image>
+            <Image x:Name="imagePictureBox" Height="50" Width="50"></Image>
             <Button x:Name="weatherChangeButton" Content="weather change" Height="20" Width="100" Click="WeatherChangeButton_Click">
             </Button>
         </StackPanel>
