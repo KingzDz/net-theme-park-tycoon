@@ -82,7 +82,13 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         private void StackPanel_Loaded(object sender, RoutedEventArgs e)
         {
             RefreshRides();
+            RefreshBalance();
             BuyButton.Visibility = Visibility.Collapsed;
+        }
+
+        private void RefreshBalance()
+        {
+            balanceLabel.Content = "Balance: " + park.ParkWallet.Balance.ToString();
         }
 
         private void BuyButton_Click(object sender, RoutedEventArgs e)
@@ -111,15 +117,12 @@ namespace ThemeParkTycoonGame.Fancy.Controls
                         }
                         marketplace.Buy(ride, park.ParkWallet, park.ParkInventory);
                         RefreshRides();
+                        RefreshBalance();
                     }
                 }
             }
         }
 
-        private void StackPanel_Loaded(object sender, RoutedEventArgs e)
-        {
-            balanceLabel.Content = "Balance: " + park.ParkWallet.Balance.ToString();
-            RefreshRides();
-        }
+
     }
 }

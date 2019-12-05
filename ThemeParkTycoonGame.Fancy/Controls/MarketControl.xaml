@@ -10,11 +10,7 @@
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
     </UserControl.Resources>
     <StackPanel Orientation="Horizontal" Loaded="StackPanel_Loaded">
-        <Button Width="200" Height="100">
-            <Viewbox>
-                <Image Source="{StaticResource Caterpie}"></Image>
-            </Viewbox>
-        </Button>
+
         <StackPanel Width="650" Height="450">
 
             <ListView x:Name="ShopList" PreviewMouseLeftButtonUp="listView_Click">
@@ -22,14 +18,13 @@
             </ListView>
         </StackPanel>
         <StackPanel Width="150" Height="450" x:Name="Details">
+            <Label x:Name="balanceLabel"></Label>
             <Label x:Name="NameLabel"></Label>
             <Label x:Name="DurationLabel"></Label>
             <Label x:Name="CostLabel"></Label>
 
             <Button x:Name="BuyButton" Click="BuyButton_Click">Buy</Button>
         </StackPanel>
-        <Label x:Name="balanceLabel"></Label>
     </StackPanel>
 
 </UserControl>
-    
