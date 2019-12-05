@@ -28,10 +28,14 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         {
             ThemeParkTycoonGame.Core.Weather.GetRandom();
 
-            MessageBox.Show(Core.Weather.GetRandom().Name);
-            if (Core.Weather.GetRandom().Name == "rainy")
+            //MessageBox.Show(Core.Weather.GetRandom().Name);
+            if (imagePictureBox.Source == null)
             {
-                //imagePictureBox.Source = "/Resources/weather.rain_48.png";
+                MessageBox.Show(Core.Weather.GetRandom().Name);
+
+                imagePictureBox.Tag = "/Resources/weather.rain_48.png";
+                imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_sun_48.png"));
+
             }
             else if (true)
             {
