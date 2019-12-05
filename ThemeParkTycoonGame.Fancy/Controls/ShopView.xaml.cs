@@ -31,5 +31,10 @@ namespace ThemeParkTycoonGame.Fancy.Controls
                 
             }
         }
+
+        private void productListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

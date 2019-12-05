@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="Buyshop" Height="450" Width="800">
     <Grid>
-        
+        <Button Content="sluit dit venster" Height="30px" Width="100px" VerticalAlignment="Bottom" Click="Button_Click" ></Button>
     </Grid>
 </Window>
