@@ -19,6 +19,6 @@
         <ListBox Name="statListBox" Height="160px" Width="285px" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="0 0 0 25px"></ListBox>
         <Button Height="50px" Width="100px" Name="addStatButton" VerticalAlignment="Center" HorizontalAlignment="Right">Add Stat</Button>
         <Button Height="50px" Width="100px" VerticalAlignment="Center" HorizontalAlignment="Right" Name="removeStatButton" Margin="0 150px 0 0">Remove Stat</Button>
-        <Button Height="25px" VerticalAlignment="Bottom" Name="addProductButton">Create new product</Button>
+        <Button Height="25px" VerticalAlignment="Bottom" Name="addProductButton" Click="addProductButton_Click">Create new product</Button>
     </Grid>
 </Window>
