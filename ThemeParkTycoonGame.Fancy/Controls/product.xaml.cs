@@ -42,5 +42,32 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             MessageBox.Show(product.Name);
             this.Close();
         }
+
+        private void priceHigherButton_Click(object sender, RoutedEventArgs e)
+        {
+            string price = priceTextBox.Text;
+            int priceup = int.Parse(price);
+            int newprice;
+            newprice = priceup + 1;
+           priceTextBox.Text = newprice.ToString();
+        }
+
+        private void priceLowerButton_Click(object sender, RoutedEventArgs e)
+        {
+            string price = priceTextBox.Text;
+            int pricedown = int.Parse(price);
+            if (pricedown != 0)
+            {
+                int newprice;
+                newprice = pricedown - 1;
+                priceTextBox.Text = newprice.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Please Enter a value greater than Zero");
+            }
+
+
+        }
     }
 }
