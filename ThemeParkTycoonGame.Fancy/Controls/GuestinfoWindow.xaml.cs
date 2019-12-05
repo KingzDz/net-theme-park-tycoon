@@ -26,6 +26,14 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             InitializeComponent();
 
             this.guest = selectedGuest;
+
+            this.guest.Wallet.BalanceChanged += (s, ev) =>
+            {
+                RefreshFinances();
+            };
+
+
+            RefreshFinances();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -47,6 +55,23 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         //log.Reason,
         //}));
          //}
+            // balanceLabel.Content = guest.Wallet.Balance;
+
+        private void RefreshFinances()
+        {
+            // clear the panel
+            // financialHistory.Items.Clear();
+
+            foreach (TransactionLog log in this.guest.Wallet.History.ToList())
+            {
+                
+                ListViewItem temp = new ListViewItem();
+
+
+                guest.Wallet.History.Add(log);
+
+            }
+        }
     }
 }
 

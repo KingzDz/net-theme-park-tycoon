@@ -35,6 +35,7 @@
                     <ListView x:Name="ListView" Height="100px">
                     </ListView>
                 </StackPanel>
+                <ListView x:Name="financialHistory"></ListView>
             </StackPanel>
         </GroupBox>
 

@@ -83,6 +83,9 @@ namespace ThemeParkTycoonGame.Forms.Screens
             // clear the panel
             financeListView.Items.Clear();
 
+            TransactionLog temp = new TransactionLog();
+
+
             foreach (TransactionLog log in this.guest.Wallet.History)
             {
                 financeListView.Items.Add(new ListViewItem(new string[] {
