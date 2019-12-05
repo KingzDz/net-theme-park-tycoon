@@ -33,15 +33,15 @@
             this.statsGroupBox = new System.Windows.Forms.GroupBox();
             this.statsPanel = new System.Windows.Forms.Panel();
             this.rideParent = new System.Windows.Forms.Panel();
-            this.desireParent = new System.Windows.Forms.Panel();
             this.rideHistoryGroupBox = new System.Windows.Forms.GroupBox();
             this.actionsListView = new System.Windows.Forms.ListView();
             this.rideColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.rideEntryTimeColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.statColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.financeParent = new System.Windows.Forms.Panel();
+            this.desireParent = new System.Windows.Forms.Panel();
             this.desiresGroupBox = new System.Windows.Forms.GroupBox();
             this.desiresPanel = new System.Windows.Forms.Panel();
+            this.financeParent = new System.Windows.Forms.Panel();
             this.financeGroupBox = new System.Windows.Forms.GroupBox();
             this.financeListView = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -50,10 +50,10 @@
             this.statsParent.SuspendLayout();
             this.statsGroupBox.SuspendLayout();
             this.rideParent.SuspendLayout();
-            this.desireParent.SuspendLayout();
             this.rideHistoryGroupBox.SuspendLayout();
-            this.financeParent.SuspendLayout();
+            this.desireParent.SuspendLayout();
             this.desiresGroupBox.SuspendLayout();
+            this.financeParent.SuspendLayout();
             this.financeGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,16 +99,6 @@
             this.rideParent.Size = new System.Drawing.Size(767, 150);
             this.rideParent.TabIndex = 1;
             // 
-            // desireParent
-            // 
-            this.desireParent.Controls.Add(this.desiresGroupBox);
-            this.desireParent.Dock = System.Windows.Forms.DockStyle.Top;
-            this.desireParent.Location = new System.Drawing.Point(0, 272);
-            this.desireParent.Name = "desireParent";
-            this.desireParent.Padding = new System.Windows.Forms.Padding(5);
-            this.desireParent.Size = new System.Drawing.Size(767, 136);
-            this.desireParent.TabIndex = 2;
-            // 
             // rideHistoryGroupBox
             // 
             this.rideHistoryGroupBox.Controls.Add(this.actionsListView);
@@ -128,6 +118,7 @@
             this.rideEntryTimeColumnHeader,
             this.statColumnHeader});
             this.actionsListView.Dock = System.Windows.Forms.DockStyle.Left;
+            this.actionsListView.HideSelection = false;
             this.actionsListView.Location = new System.Drawing.Point(3, 16);
             this.actionsListView.Name = "actionsListView";
             this.actionsListView.Size = new System.Drawing.Size(767, 121);
@@ -150,15 +141,15 @@
             this.statColumnHeader.Text = "Stats Changes";
             this.statColumnHeader.Width = 500;
             // 
-            // financeParent
+            // desireParent
             // 
-            this.financeParent.Controls.Add(this.financeGroupBox);
-            this.financeParent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.financeParent.Location = new System.Drawing.Point(0, 408);
-            this.financeParent.Name = "financeParent";
-            this.financeParent.Padding = new System.Windows.Forms.Padding(5);
-            this.financeParent.Size = new System.Drawing.Size(767, 131);
-            this.financeParent.TabIndex = 3;
+            this.desireParent.Controls.Add(this.desiresGroupBox);
+            this.desireParent.Dock = System.Windows.Forms.DockStyle.Top;
+            this.desireParent.Location = new System.Drawing.Point(0, 272);
+            this.desireParent.Name = "desireParent";
+            this.desireParent.Padding = new System.Windows.Forms.Padding(5);
+            this.desireParent.Size = new System.Drawing.Size(767, 136);
+            this.desireParent.TabIndex = 2;
             // 
             // desiresGroupBox
             // 
@@ -182,6 +173,16 @@
             this.desiresPanel.Size = new System.Drawing.Size(742, 101);
             this.desiresPanel.TabIndex = 1;
             // 
+            // financeParent
+            // 
+            this.financeParent.Controls.Add(this.financeGroupBox);
+            this.financeParent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.financeParent.Location = new System.Drawing.Point(0, 408);
+            this.financeParent.Name = "financeParent";
+            this.financeParent.Padding = new System.Windows.Forms.Padding(5);
+            this.financeParent.Size = new System.Drawing.Size(767, 131);
+            this.financeParent.TabIndex = 3;
+            // 
             // financeGroupBox
             // 
             this.financeGroupBox.Controls.Add(this.financeListView);
@@ -201,6 +202,7 @@
             this.columnHeader2,
             this.columnHeader3});
             this.financeListView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.financeListView.HideSelection = false;
             this.financeListView.Location = new System.Drawing.Point(3, 16);
             this.financeListView.Name = "financeListView";
             this.financeListView.Size = new System.Drawing.Size(751, 102);
@@ -239,10 +241,10 @@
             this.statsParent.ResumeLayout(false);
             this.statsGroupBox.ResumeLayout(false);
             this.rideParent.ResumeLayout(false);
-            this.desireParent.ResumeLayout(false);
             this.rideHistoryGroupBox.ResumeLayout(false);
-            this.financeParent.ResumeLayout(false);
+            this.desireParent.ResumeLayout(false);
             this.desiresGroupBox.ResumeLayout(false);
+            this.financeParent.ResumeLayout(false);
             this.financeGroupBox.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -268,4 +270,5 @@
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
     }
+
 }
