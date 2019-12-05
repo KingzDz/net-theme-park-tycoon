@@ -29,24 +29,28 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             ThemeParkTycoonGame.Core.Weather.GetRandom();
 
             //MessageBox.Show(Core.Weather.GetRandom().Name);
-            if (imagePictureBox.Source == null)
+            if (Core.Weather.GetRandom().Name == "Sunny")
             {
-                MessageBox.Show(Core.Weather.GetRandom().Name);
-
-                imagePictureBox.Tag = "/Resources/weather.rain_48.png";
+                imagePictureBox.Tag = "/Resources/weather.sun_48.png";
                 imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_sun_48.png"));
 
             }
-            else if (true)
+            else if (Core.Weather.GetRandom().Name == "Rainy")
             {
+                imagePictureBox.Tag = "/Resources/weather.rain_48.png";
+                imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_rain_48.png"));
 
             }
-            else if (true)
+            else if (Core.Weather.GetRandom().Name == "Stormy")
             {
+                imagePictureBox.Tag = "/Resources/weather.storm_48.png";
+                imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_storm_48.png"));
 
             }
-            else if (true)
+            else if (Core.Weather.GetRandom().Name == "Snow")
             {
+                imagePictureBox.Tag = "/Resources/weather.snow_48.png";
+                imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_snow_48.png"));
 
             }
         }
