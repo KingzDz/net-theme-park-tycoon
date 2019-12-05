@@ -11,7 +11,7 @@
         
         
         <StackPanel Width="650" Height="450">
-            <ListView x:Name="ShopList">
+            <ListView x:Name="ShopList" PreviewMouseLeftButtonUp="listView_Click">
                 
             </ListView>
         </StackPanel>
