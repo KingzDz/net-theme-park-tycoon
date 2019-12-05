@@ -43,8 +43,13 @@ namespace ThemeParkTycoonGame.Fancy.Windows
             // Give the park information to the ParkControl
             parkControl.Park = this.park;
 
-            // Give the guest information to the Guest Control
+            // Give the guest information to the Guest Control and Employee Control
             guestsControl.Guests = this.park.Guests;
+            debugControl.guests = this.park.Guests;
+           
+
+            employeeControl.Guests = this.park.Guests;
+            employeeControl.Employees = this.park.Employees;
 
             // This allows us to bind to every property in a park (like EntryFee, Name, Guests, etc)
             this.DataContext = this.park;
@@ -69,6 +74,8 @@ namespace ThemeParkTycoonGame.Fancy.Windows
         private void TickTimer_Tick(object sender, EventArgs e)
         {
             this.park.GuestController.DoTick((int) tickTimer.Interval.TotalMilliseconds);
+            this.park.EmployeeController.DoTick((int)tickTimer.Interval.TotalMilliseconds);
+  
         }
 
         private void MainWindow_MouseDown(object sender, MouseButtonEventArgs e)
@@ -80,5 +87,6 @@ namespace ThemeParkTycoonGame.Fancy.Windows
         {
             this.Close();
         }
+
     }
 }
