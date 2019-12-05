@@ -19,9 +19,26 @@ namespace ThemeParkTycoonGame.Fancy.Controls
     /// </summary>
     public partial class product : Window
     {
+        public product productData;
+
         public product()
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+        public void addProductButton(object sender, EventArgs e)
+        {
+            product product = new product();
+
+            product.Name = nameTextBox.Text;
+        
+            productData = product;
+            this.Close();
+        }
+
     }
 }
