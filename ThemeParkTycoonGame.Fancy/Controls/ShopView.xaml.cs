@@ -27,7 +27,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
             foreach (Product product in Products.All)
             {
-                productLabel.Content += product.Name;
+                //productLabel.Content += product.Name;
                 
             }
         }
