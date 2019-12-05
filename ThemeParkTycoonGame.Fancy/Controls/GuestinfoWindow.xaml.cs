@@ -46,12 +46,27 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            // balanceLabel.Content = guest.Wallet.Balance;
-
+            //balanceLabel.Content = guest.Wallet.Balance;
 
             this.Title = guest.Name;
 
         }
+
+        //private void RefreshFinances()
+        //{
+        //clear the panel
+        //ListView.Items.Clear();
+
+        //foreach (TransactionLog log in this.guest.Wallet.History)
+        //{
+        //guest.Wallet.Add()
+        //FinancieHistory.Colums.Add(new ) new string[] {
+        //(-log.Amount).ToString(),
+        //log.Time.ToString(),
+        //log.Reason,
+        //}));
+        //}
+        // balanceLabel.Content = guest.Wallet.Balance;
 
         //private void RefreshFinances()
         //{
@@ -104,3 +119,4 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         }
     }
 }
+
