@@ -53,6 +53,27 @@ namespace ThemeParkTycoonGame.Fancy.Controls
     public partial class DebugView : UserControl
     {
         public GuestController guestController;
+        private Park park;
+        public Park Park
+        {
+            get
+            {
+                return park;
+            }
+            set
+               
+            {
+                park = value;
+                park.ParkWallet.BalanceChanged += ParkWallet_BalanceChanged;
+            }
+                
+        }
+
+        private void ParkWallet_BalanceChanged(object sender, BalanceChangedEventArgs e)
+        {
+            parkWalletLabel.Content = Park.ParkWallet.Balance;
+        }
+
         public GuestList guests;
         public DebugGuestView debugGuestView;
 
@@ -63,10 +84,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             debugGuestView = new DebugGuestView();
             controlParent.Children.Add(debugGuestView);
             controlParent.Visibility = Visibility.Hidden;
-            debugGuestView.debugView = this;
-           
         }
-    
 
         private void EditGuestButton_Click(object sender, RoutedEventArgs e)
         {
@@ -119,6 +137,15 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             }
             debugGuestView.guestsListView.Items.Refresh();
         }
+
+        private void AddThousandButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
+
+ 
+
 }
 >>>>>>> master
+

@@ -28,6 +28,14 @@
 
         <Button x:Name="RefreshGuestListButton" Click="RefreshGuestListButton_Click" Height="64" Margin="0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch">RefreshGuests</Button>
         <Button x:Name="changeWeatherButton"  Height="64" Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" Click="changeWeatherButton_Click" Content="Change Weather"/>
+        <Button x:Name="AddThousandButton" Height="64" Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" Click="AddThousandButton_Click" Content="Add $1000"/>
+
+        <Label Content="{Binding Path=Balance}" 
+               DataContext="{Binding Path=Park.ParkWallet}"
+               x:Name="parkWalletLabel"
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Center"/>
+
         <StackPanel x:Name="controlParent"></StackPanel>
 
     </StackPanel>
