@@ -46,7 +46,6 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-<<<<<<< HEAD
             this.Title = guest.Name; 
 
             foreach(Stat stat in guest.CurrentStats)
@@ -73,12 +72,9 @@ namespace ThemeParkTycoonGame.Fancy.Controls
                     thirstSlider.Value = stat.Value / 10;
                 }
             }
-=======
             //balanceLabel.Content = guest.Wallet.Balance;
 
             this.Title = guest.Name;
-
->>>>>>> 15664a715dbf8bfcdfbca5787c8b3144ea4ab594
         }
 
         //private void RefreshFinances()
