@@ -18,7 +18,7 @@ namespace ThemeParkTycoonGame.Core
         public event WeatherChangedEvent WeatherChanged;
 
         public GuestList Guests;
-        public Wallet ParkWallet { get; set; }
+        public Wallet ParkWallet;
         public ParkInventory ParkInventory;
         public decimal EntryFee;
 
