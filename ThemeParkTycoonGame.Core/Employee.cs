@@ -9,7 +9,7 @@ namespace ThemeParkTycoonGame.Core
         public string Name;
         public string Function;
         public int Efficiency; // optionele opdracht
-        public int Salary;
+        public decimal Salary = 100;
 
         // This decides the worker's function
         // StatTypes and their Id's can be found in StatTypes.cs
@@ -18,7 +18,11 @@ namespace ThemeParkTycoonGame.Core
         public Employee()
         {
             Name = NameGenerator.NextName();
-                       
+
+            Boost.StatType = StatTypes.GetByUniqueId("excitement");
+            Boost.Multiplier = 1.25f;
+            Boost.Duration = 60;
         }
+
     }
 }

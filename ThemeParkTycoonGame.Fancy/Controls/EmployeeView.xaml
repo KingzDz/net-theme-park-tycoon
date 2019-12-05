@@ -7,9 +7,16 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <Button x:Name="addEmployeeButton" Content="Werknemers toevoegen'" HorizontalAlignment="Left" Margin="30,299,0,0" Grid.Row="1" VerticalAlignment="Top" Width="145" Click="AddEmployeeButton_Click"/>
-        <Button Content="wijzigen" HorizontalAlignment="Left" Margin="265,299,0,0" Grid.Row="1" VerticalAlignment="Top" Width="125"/>
-        <ListView x:Name="employeeListView" HorizontalAlignment="Left" Height="235" Margin="30,44,0,0" Grid.Row="1" VerticalAlignment="Top" Width="360">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="#FFD4D3DC" Offset="0.993"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="addEmployeeButton" Content="Werknemers Toevoegen'" HorizontalAlignment="Left" Margin="30,299,0,0" VerticalAlignment="Top" Width="145" Click="AddEmployeeButton_Click" Height="71" RenderTransformOrigin="0.5,0.5" Background="#FF8995A4"/>
+        <Button Content="Wijzigen" HorizontalAlignment="Left" Margin="320,299,0,0" VerticalAlignment="Top" Width="125" Height="71" Background="#FF8995A4"/>
+        <Button Content="Ontslaan" HorizontalAlignment="Left" Margin="605,299,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="1.32,0.05" Height="71" Background="#FF8995A4"/>
+        <ListView x:Name="employeeListView" HorizontalAlignment="Left" Height="235" Margin="30,44,0,0" VerticalAlignment="Top" Width="725" >
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>
