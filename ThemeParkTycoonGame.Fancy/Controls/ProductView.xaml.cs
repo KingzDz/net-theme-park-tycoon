@@ -17,7 +17,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
     /// <summary>
     /// Interaction logic for product.xaml
     /// </summary>
-    public partial class product : Window
+    public partial class ProductView : Window
     {
         public product productData;
 
@@ -37,9 +37,8 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
             product.Name = nameTextBox.Text;
 
-            productData = product;
+           
 
-            MessageBox.Show(product.Name);
             this.Close();
         }
 
