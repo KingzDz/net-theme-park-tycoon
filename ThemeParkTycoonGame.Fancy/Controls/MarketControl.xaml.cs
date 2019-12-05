@@ -19,6 +19,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
     public partial class MarketControl : UserControl
     {
         private Park park;
+        private Ride ride;
         public Park Park
         {
             get
@@ -49,10 +50,32 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         private void listView_Click(object sender, RoutedEventArgs e)
         {
+            Marketplace marketplace = Marketplace.Instance;
+            List<Ride> buyableRides = marketplace.GetBuyableRides(park.ParkInventory);
+
             var item = (sender as ListView).SelectedItem;
             if (item != null)
             {
-                MessageBox.Show(item.ToString());
+                for (int i = 0; i < buyableRides.Count(); i++)
+                {
+                    if (item.ToString() == buyableRides[i].Name)
+                    {
+                        Ride ride = buyableRides[i] as Ride;
+                        if (park.ParkWallet.Balance < ride.Cost)
+                        {
+                            MessageBox.Show(string.Format("You do not have enough money to buy {0}!", ride.Name));
+                            return;
+                        }
+
+                        if (park.ParkInventory.Contains(ride))
+                        {
+                            MessageBox.Show(string.Format("You already own {0}!", ride.Name));
+                            return;
+                        }
+                        marketplace.Buy(ride, park.ParkWallet, park.ParkInventory);
+                        RefreshRides();
+                    }
+                }
             }
         }
 
