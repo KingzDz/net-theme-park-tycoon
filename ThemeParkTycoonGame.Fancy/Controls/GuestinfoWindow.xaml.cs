@@ -27,14 +27,19 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
             this.guest = selectedGuest;
 
+            this.guest.Wallet.BalanceChanged += (s, ev) =>
+            {
+                RefreshFinances();
+            };
+            RefreshFinances();
             //RefreshStats();
         }
         private void RefreshStats()
         {
-            wantingRideSlider.Value = RandomPercentage();
-            excitementSlider.Value = RandomPercentage();
-            hungerSlider.Value = RandomPercentage();
-            thirstSlider.Value = RandomPercentage();
+            //wantingRideSlider.Value = RandomPercentage();
+            //excitementSlider.Value = RandomPercentage();
+            //hungerSlider.Value = RandomPercentage();
+            //thirstSlider.Value = RandomPercentage();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -53,15 +58,32 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         //        ListViewItem temp = new ListViewItem();
 
         //        financialHistory.Items.Add(temp);
+        // balanceLabel.Content = guest.Wallet.Balance;
 
 
-        //        //new string[] {
-        //        //    (-log.Amount).ToString(),
-        //        //    log.Time.ToString(),
-        //        //    log.Reason,
-        //        //}));
-        //    }
         //}
+
+        private void RefreshFinances()
+        {
+            // clear the panel
+            // financialHistory.Items.Clear();
+
+            foreach (TransactionLog log in this.guest.Wallet.History.ToList())
+            {
+
+                ListViewItem temp = new ListViewItem();
+
+
+                guest.Wallet.History.Add(log);
+
+                //        //new string[] {
+                //        //    (-log.Amount).ToString(),
+                //        //    log.Time.ToString(),
+                //        //    log.Reason,
+                //        //}));
+                //    }
+            }
+        }
 
         private double RandomPercentage()
         {
@@ -70,6 +92,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             
 
             return decimalNumber;
+            
         }
     }
 }
