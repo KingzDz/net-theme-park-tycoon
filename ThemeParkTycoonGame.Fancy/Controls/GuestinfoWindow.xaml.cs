@@ -21,6 +21,8 @@ namespace ThemeParkTycoonGame.Fancy.Controls
     public partial class GuestinfoWindow : Window
     {
         Core.Guest guest;
+        Core.Wallet wallet;
+
         public GuestinfoWindow(Core.Guest selectedGuest)
         {
             InitializeComponent();
@@ -44,6 +46,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+<<<<<<< HEAD
             this.Title = guest.Name; 
 
             foreach(Stat stat in guest.CurrentStats)
@@ -70,7 +73,29 @@ namespace ThemeParkTycoonGame.Fancy.Controls
                     thirstSlider.Value = stat.Value / 10;
                 }
             }
+=======
+            //balanceLabel.Content = guest.Wallet.Balance;
+
+            this.Title = guest.Name;
+
+>>>>>>> 15664a715dbf8bfcdfbca5787c8b3144ea4ab594
         }
+
+        //private void RefreshFinances()
+        //{
+        //clear the panel
+        //ListView.Items.Clear();
+
+        //foreach (TransactionLog log in this.guest.Wallet.History)
+        //{
+        //guest.Wallet.Add()
+        //FinancieHistory.Colums.Add(new ) new string[] {
+        //(-log.Amount).ToString(),
+        //log.Time.ToString(),
+        //log.Reason,
+        //}));
+        //}
+        // balanceLabel.Content = guest.Wallet.Balance;
 
         //private void RefreshFinances()
         //{
@@ -91,15 +116,16 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         private void RefreshFinances()
         {
             // clear the panel
-            // financialHistory.Items.Clear();
+            financialHistory.Items.Clear();
+
+
 
             foreach (TransactionLog log in this.guest.Wallet.History.ToList())
             {
 
-                ListViewItem temp = new ListViewItem();
+                
 
-
-                guest.Wallet.History.Add(log);
+                financialHistory.Items.Add(log);
 
                 //        //new string[] {
                 //        //    (-log.Amount).ToString(),
@@ -108,6 +134,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
                 //        //}));
                 //    }
             }
+
         }
 
         private double RandomPercentage()
@@ -121,3 +148,4 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         }
     }
 }
+
