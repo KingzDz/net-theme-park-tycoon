@@ -33,7 +33,7 @@
                         </StackPanel>
                     </TabItem.Header>
 
-                    <controls:ParkDetailsView x:Name="parkControl"/>
+                    <controls:ParkDetailsView x:Name="parkControl" Loaded="parkControl_Loaded"/>
                 </TabItem>
 
                 <TabItem>

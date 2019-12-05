@@ -13,7 +13,7 @@ namespace ThemeParkTycoonGame.Core
         public delegate void BalanceChangedEvent(object sender, BalanceChangedEventArgs e);
         public event BalanceChangedEvent BalanceChanged;
 
-        private decimal balance;
+        public decimal balance;
         public decimal Balance {
             get
             {
