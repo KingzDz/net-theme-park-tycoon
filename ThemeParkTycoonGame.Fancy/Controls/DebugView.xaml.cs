@@ -40,7 +40,6 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ThemeParkTycoonGame.Core;
 using ThemeParkTycoonGame.Fancy.Controls;
@@ -50,7 +49,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
     /// <summary>
     /// Interaction logic for DebugView.xaml
     /// </summary>
-    public partial class DebugView : UserControl
+    public partial class DebugView : Window
     {
         public GuestController guestController;
         public GuestList guests;
