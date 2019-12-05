@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ThemeParkTycoonGame.Core;
 
 namespace ThemeParkTycoonGame.Fancy.Controls
 {
@@ -23,7 +24,18 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         public ShopView()
         {
             InitializeComponent();
+            foreach (Product product in Products.All)
+            {
+                ProductList.Children.Add(new Label()
+                {
+                    Content = product.Name
+                });
+            }
+
         }
+
+        
+
 
         private void CreateProductButton_Click(object sender, RoutedEventArgs e)
         {

@@ -12,6 +12,7 @@ namespace ThemeParkTycoonGame.Fancy
         {
             CreateWeatherTypes();
             CreateRides();
+            CreateProducts();
 
             // Set the image that appears when the ride image is not set.
             Ride.RideImageUnavailableImage = "pack://siteoforigin:,,,/Resources/unavailable_48.png";
@@ -47,6 +48,20 @@ namespace ThemeParkTycoonGame.Fancy
                 new Ride("Python", "pack://siteoforigin:,,,/Resources/efteling_python.png", 10000, 5, GetStatBoostsForPython()),
                 new Ride("Robin Hood", "pack://siteoforigin:,,,/Resources/walibi_robin_hood.png", 15000, 20),
                 new Ride("Vogel Rok", "pack://siteoforigin:,,,/Resources/efteling_vogelrok.png", 15000, 15),
+            };
+        }
+
+        public static void CreateProducts()
+        {
+            Products.All = new List<Product>()
+            {
+                new Product("hamburger", "Hamburger met vlees, zeer lekker voor als je honger hebt", 4),
+                new Product("Friet", "Franse Friet met of zonder saus", 1.43),
+                new Product("Cola", "Frisdrank", 1.75),
+                new Product("Hondenvoer", "Te koop voor Wicher", 10),
+                new Product("Suikerspin", "Gemaakt van Suiker", 2.50),
+                new Product("Knuffelbeer", "Lekker warme Knuffelbeer", 1.50),
+                new Product("Citroen Ijsje", "Voor het warme weer", 2.50)
             };
         }
     }

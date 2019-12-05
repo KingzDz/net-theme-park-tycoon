@@ -7,7 +7,11 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <ListBox Name="productListbox" Width="500px" Height="350px" HorizontalAlignment="Left" VerticalAlignment="Center"></ListBox>
+        <ListBox Name="productListbox" Width="500px" Height="350px" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <StackPanel x:Name="ProductList">
+                
+            </StackPanel>
+        </ListBox>
         <Button Name="createProductButton" Height="50px" Width="150px" HorizontalAlignment="Right" Margin="50px 50px" VerticalAlignment="Top" Click="CreateProductButton_Click" >Create new product</Button>
         <Button Height="50" Width="100" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="50px 50px" Name="removeProductButton">Remove</Button>
     </Grid>
