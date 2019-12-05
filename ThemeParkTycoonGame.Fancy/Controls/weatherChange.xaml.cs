@@ -29,7 +29,22 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             ThemeParkTycoonGame.Core.Weather.GetRandom();
 
             MessageBox.Show(Core.Weather.GetRandom().Name);
+            if (Core.Weather.GetRandom().Name == "rainy")
+            {
+                //imagePictureBox.Source = "/Resources/weather.rain_48.png";
+            }
+            else if (true)
+            {
 
+            }
+            else if (true)
+            {
+
+            }
+            else if (true)
+            {
+
+            }
         }
     }
 }
