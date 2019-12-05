@@ -30,15 +30,17 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         {
             this.Close();
         }
-        public void addProductButton(object sender, EventArgs e)
+
+        private void AddnewProductButton_Click_1(object sender, RoutedEventArgs e)
         {
             product product = new product();
 
             product.Name = nameTextBox.Text;
-        
+
             productData = product;
+
+            MessageBox.Show(product.Name);
             this.Close();
         }
-
     }
 }
