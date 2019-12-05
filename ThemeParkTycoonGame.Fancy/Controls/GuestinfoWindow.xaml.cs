@@ -44,7 +44,32 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            this.Title = guest.Name;
+            this.Title = guest.Name; 
+
+            foreach(Stat stat in guest.CurrentStats)
+            {
+                Console.WriteLine(stat.Type.Name + " : " + stat.Value.ToString());
+                if (stat.Type.Name == "Wanting to go on a ride")
+                {
+                    wantingRidePrecentageLabel.Content = string.Format("{0}%", stat.Value.ToString());
+                    wantingRideSlider.Value = stat.Value / 10;
+                }
+                else if (stat.Type.Name == "Excitement")
+                {
+                    excitementPrecentageLabel.Content = string.Format("{0}%", stat.Value.ToString());
+                    excitementSlider.Value = stat.Value / 10;
+                }
+                else if (stat.Type.Name == "Hunger")
+                {
+                    hungerRidePrecentageLabel.Content = string.Format("{0}%", stat.Value.ToString());
+                    hungerSlider.Value = stat.Value / 10;
+                }
+                else if (stat.Type.Name == "Thirst")
+                {
+                    thirstRidePrecentageLabel.Content = string.Format("{0}%", stat.Value.ToString());
+                    thirstSlider.Value = stat.Value / 10;
+                }
+            }
         }
 
         //private void RefreshFinances()

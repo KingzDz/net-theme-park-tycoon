@@ -40,10 +40,10 @@
                     <Slider x:Name="hungerSlider" Value="6" Grid.Row="2" Grid.Column="0" IsEnabled="False"/>
                     <Slider x:Name="thirstSlider" Value="8" Grid.Row="3" Grid.Column="0" IsEnabled="False"/>
 
-                    <Label Grid.Row="0" Grid.Column="1" Content="0%" HorizontalAlignment="Center"/>
-                    <Label Grid.Row="1" Grid.Column="1" Content="0%" HorizontalAlignment="Center"/>
-                    <Label Grid.Row="2" Grid.Column="1" Content="0%" HorizontalAlignment="Center"/>
-                    <Label Grid.Row="3" Grid.Column="1" Content="0%" HorizontalAlignment="Center"/>
+                    <Label x:Name="wantingRidePrecentageLabel" Grid.Row="0" Grid.Column="1" Content="0%" HorizontalAlignment="Center"/>
+                    <Label x:Name="excitementPrecentageLabel" Grid.Row="1" Grid.Column="1" Content="0%" HorizontalAlignment="Center"/>
+                    <Label x:Name="hungerRidePrecentageLabel" Grid.Row="2" Grid.Column="1" Content="0%" HorizontalAlignment="Center"/>
+                    <Label x:Name="thirstRidePrecentageLabel" Grid.Row="3" Grid.Column="1" Content="0%" HorizontalAlignment="Center"/>
                 </Grid>
             </Grid>
         </GroupBox>
