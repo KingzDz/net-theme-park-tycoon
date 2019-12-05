@@ -37,9 +37,15 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             {
                 RefreshFinances();
             };
-
-
             RefreshFinances();
+            //RefreshStats();
+        }
+        private void RefreshStats()
+        {
+            //wantingRideSlider.Value = RandomPercentage();
+            //excitementSlider.Value = RandomPercentage();
+            //hungerSlider.Value = RandomPercentage();
+            //thirstSlider.Value = RandomPercentage();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -47,7 +53,25 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             // balanceLabel.Content = guest.Wallet.Balance;
 
 
+            this.Title = guest.Name;
+
         }
+
+        //private void RefreshFinances()
+        //{
+        //    // clear the panel
+        //    financialHistory.Items.Clear();
+
+        //    foreach (TransactionLog log in this.guest.Wallet.History)
+        //    {
+
+        //        ListViewItem temp = new ListViewItem();
+
+        //        financialHistory.Items.Add(temp);
+        // balanceLabel.Content = guest.Wallet.Balance;
+
+
+        //}
 
         private void RefreshFinances()
         {
@@ -59,14 +83,29 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             foreach (TransactionLog log in this.guest.Wallet.History.ToList())
             {
 
-                //ListViewItem temp = new ListViewItem();
 
 
                 guest.Wallet.History.Add(log);
                 financialHistory.Items.Add(log);
 
+                //        //new string[] {
+                //        //    (-log.Amount).ToString(),
+                //        //    log.Time.ToString(),
+                //        //    log.Reason,
+                //        //}));
+                //    }
             }
 
+        }
+
+        private double RandomPercentage()
+        {
+            Random random = new Random();
+            double decimalNumber = (double) random.Next(0, 10);
+            
+
+            return decimalNumber;
+            
         }
     }
 }
