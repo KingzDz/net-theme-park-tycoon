@@ -6,14 +6,14 @@ namespace ThemeParkTycoonGame.Core
 {
     public class Employee
     {
-        public string Name;
-        public string Function;
-        public int Efficiency; // optionele opdracht
-        public decimal Salary = 100;
+        public string Name { get; set; }
+        public string Function { get; set; }
+        public int Efficiency { get; set; } // optionele opdracht
+        public decimal Salary { get; set; } = 100;
 
-        // This decides the worker's function
-        // StatTypes and their Id's can be found in StatTypes.cs
-        public StatBoost Boost = new StatBoost();
+    // This decides the worker's function
+    // StatTypes and their Id's can be found in StatTypes.cs
+    public StatBoost Boost = new StatBoost();
 
         public Employee()
         {

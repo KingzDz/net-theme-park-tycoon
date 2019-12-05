@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,8 +35,8 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             }
         }
 
-        private List<Employee> employees;
-        public List<Employee> Employees
+        private ObservableCollection<Employee> employees;
+        public ObservableCollection<Employee> Employees
         {
             get
             {
@@ -46,6 +47,8 @@ namespace ThemeParkTycoonGame.Fancy.Controls
                 employees = value;
             }
         }
+
+        GridView grid;
 
         public EmployeeView()
         {
@@ -61,7 +64,14 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             NewEmployee.Boost.StatType = StatTypes.GetByUniqueId("excitement");
 
             Employees.Add(NewEmployee);
-            employeeListView.Items.Add(NewEmployee.Name);
+            //employeeListView.Items.Add(NewEmployee);
         }
+
+        private void FireButton_Click(object sender, RoutedEventArgs e)
+        {
+            string employeeName = (string)employeeListView.Items[employeeListView.SelectedIndex];
+
+        }
+
     }
 }
