@@ -26,16 +26,13 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         private void WeatherChangeButton_Click(object sender, RoutedEventArgs e)
         {
-            string[] rain = { "rain", "/Resources/weather_rain_48.png" };
-            string[] storm = { "storm", "/Resources/weather_storm_48.png" };
-            string[] snow = { "snow", "/Resources/weather_snow_48.png" };
-            string[] sun = { "sun", "Resources/weather_sun_48.png" };
-            string[] weathers = { rain[0], storm[0], sun[0], snow[0] };
+            
 
-            Random rand = new Random();
-            int index = rand.Next(weathers.Length);
+            ThemeParkTycoonGame.Core.Weather weather = new Core.Weather("regen", "regen.png", 1f);
 
-            MessageBox.Show(weathers[index]);
+
+            ThemeParkTycoonGame.Core.Weather.GetRandom();
+
         }
     }
 }
