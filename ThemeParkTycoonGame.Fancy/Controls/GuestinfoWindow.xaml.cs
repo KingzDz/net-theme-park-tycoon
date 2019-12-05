@@ -23,10 +23,6 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         Core.Guest guest;
         Core.Wallet wallet;
 
-        public const string DEFAULT_PAYMENT_REASON = "Paid to an unknown entity";
-
-        public delegate void BalanceChangedEvent(object sender, BalanceChangedEventArgs e);
-        public event BalanceChangedEvent BalanceChanged;
         public GuestinfoWindow(Core.Guest selectedGuest)
         {
             InitializeComponent();
@@ -83,9 +79,8 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             foreach (TransactionLog log in this.guest.Wallet.History.ToList())
             {
 
+                
 
-
-                guest.Wallet.History.Add(log);
                 financialHistory.Items.Add(log);
 
                 //        //new string[] {
