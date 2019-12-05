@@ -21,12 +21,12 @@
 
             </ListView>
         </StackPanel>
-        <StackPanel Width="150" Height="450" x:Name="Details" Visibility="{Binding ElementName=ShopList, Path=IsMouseOver, Converter={StaticResource BooleanToVisibilityConverter}}">
-            <Label>Name:</Label>
-            <Label>Duration:</Label>
-            <Label>Cost:</Label>
+        <StackPanel Width="150" Height="450" x:Name="Details">
+            <Label x:Name="NameLabel"></Label>
+            <Label x:Name="DurationLabel"></Label>
+            <Label x:Name="CostLabel"></Label>
 
-            <Button>Buy</Button>
+            <Button x:Name="BuyButton" Click="BuyButton_Click">Buy</Button>
         </StackPanel>
         <Label x:Name="balanceLabel"></Label>
     </StackPanel>

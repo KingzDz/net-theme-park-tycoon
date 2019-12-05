@@ -49,6 +49,11 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
                 ShopList.Items.Add(buyableRides[i].Name);
             }
+
+            BuyButton.Visibility = Visibility.Collapsed;
+            NameLabel.Content = "";
+            DurationLabel.Content = "";
+            CostLabel.Content = "";
         }
 
         private void listView_Click(object sender, RoutedEventArgs e)
@@ -57,6 +62,35 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             List<Ride> buyableRides = marketplace.GetBuyableRides(park.ParkInventory);
 
             var item = (sender as ListView).SelectedItem;
+            if (item != null)
+            {
+                BuyButton.Visibility = Visibility.Visible;
+                for (int i = 0; i < buyableRides.Count(); i++)
+                {
+                    if (item.ToString() == buyableRides[i].Name)
+                    {
+                        Ride ride = buyableRides[i] as Ride;
+
+                        NameLabel.Content = "Name: " + buyableRides[i].Name;
+                        DurationLabel.Content = "Duration: " + buyableRides[i].Duration;
+                        CostLabel.Content = "Cost: " + buyableRides[i].Cost;
+                    }
+                }
+            }
+        }
+
+        private void StackPanel_Loaded(object sender, RoutedEventArgs e)
+        {
+            RefreshRides();
+            BuyButton.Visibility = Visibility.Collapsed;
+        }
+
+        private void BuyButton_Click(object sender, RoutedEventArgs e)
+        {
+            Marketplace marketplace = Marketplace.Instance;
+            List<Ride> buyableRides = marketplace.GetBuyableRides(park.ParkInventory);
+
+            var item = ShopList.SelectedItem;
             if (item != null)
             {
                 for (int i = 0; i < buyableRides.Count(); i++)
