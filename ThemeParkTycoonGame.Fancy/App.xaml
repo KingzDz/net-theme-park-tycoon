@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:ThemeParkTycoonGame.Fancy"
              StartupUri="Windows/MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <BitmapImage x:Key="Caterpie" UriSource="Resources\caterpie_48.png"></BitmapImage>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
