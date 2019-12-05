@@ -6,14 +6,22 @@
              xmlns:local="clr-namespace:ThemeParkTycoonGame.Fancy.Controls"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+    </UserControl.Resources>
     <StackPanel Orientation="Horizontal" Loaded="StackPanel_Loaded">
         <StackPanel Width="650" Height="450">
             <ListView x:Name="ShopList" PreviewMouseLeftButtonUp="listView_Click">
-                
+
             </ListView>
         </StackPanel>
-        <StackPanel Width="150" Height="450">
-            
+        <StackPanel Width="150" Height="450" x:Name="Details" Visibility="{Binding ElementName=ShopList, Path=IsMouseOver, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <Label>Name:</Label>
+            <Label>Duration:</Label>
+            <Label>Cost:</Label>
+
+            <Button>Buy</Button>
         </StackPanel>
     </StackPanel>
 </UserControl>
+    

@@ -38,6 +38,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         private void RefreshRides()
         {
+
             ShopList.Items.Clear();
             Marketplace marketplace = Marketplace.Instance;
             List<Ride> buyableRides = marketplace.GetBuyableRides(park.ParkInventory);
