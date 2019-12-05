@@ -45,8 +45,8 @@ namespace ThemeParkTycoonGame.Fancy.Windows
 
             // Give the guest information to the Guest Control and Employee Control
             guestsControl.Guests = this.park.Guests;
-            debugControl.guests = this.park.Guests;
-            debugControl.park = this.park;
+            debugControl.Guests = this.park.Guests;
+            debugControl.Park = this.park;
 
             employeeControl.Guests = this.park.Guests;
             employeeControl.Employees = this.park.Employees;
