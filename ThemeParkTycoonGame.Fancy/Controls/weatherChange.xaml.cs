@@ -26,9 +26,11 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         private void WeatherChangeButton_Click(object sender, RoutedEventArgs e)
         {
+
+            
             ThemeParkTycoonGame.Core.Weather.GetRandom();
 
-            ThemeParkTycoonGame.Core.Weather weather = new Core.Weather("rain", "weather_rain_48.png", 1f);
+            MessageBox.Show(Core.Weather.WeatherTypes.Length.ToString());
 
         }
     }
