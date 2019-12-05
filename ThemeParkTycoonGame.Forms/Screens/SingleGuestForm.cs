@@ -53,6 +53,7 @@ namespace ThemeParkTycoonGame.Forms.Screens
             int numDesires = 0;
 
             foreach (Desire desire in this.guest.Desires)
+
             {
                 DesireLabel label = new DesireLabel(desire);
                 label.Top = numDesires++ * label.Height;
@@ -81,6 +82,9 @@ namespace ThemeParkTycoonGame.Forms.Screens
         {
             // clear the panel
             financeListView.Items.Clear();
+
+            TransactionLog temp = new TransactionLog();
+
 
             foreach (TransactionLog log in this.guest.Wallet.History)
             {
