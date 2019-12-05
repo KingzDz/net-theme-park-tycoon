@@ -28,7 +28,8 @@
 
             <Button>Buy</Button>
         </StackPanel>
-        </StackPanel>
+        <Label x:Name="balanceLabel"></Label>
+    </StackPanel>
 
 </UserControl>
     

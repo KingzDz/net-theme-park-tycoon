@@ -40,13 +40,13 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         private void RefreshRides()
         {
-
             ShopList.Items.Clear();
             Marketplace marketplace = Marketplace.Instance;
             List<Ride> buyableRides = marketplace.GetBuyableRides(park.ParkInventory);
             int buyableRidesCount = buyableRides.Count();
             for (int i = 0; i < buyableRidesCount; i++)
             {
+
                 ShopList.Items.Add(buyableRides[i].Name);
             }
         }
