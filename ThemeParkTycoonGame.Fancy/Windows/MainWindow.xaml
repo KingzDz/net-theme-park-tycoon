@@ -32,7 +32,7 @@
                             <TextBlock Text="Park" Foreground="Blue" />
                         </StackPanel>
                     </TabItem.Header>
-                    
+
                     <controls:ParkDetailsView x:Name="parkControl"/>
                 </TabItem>
 
