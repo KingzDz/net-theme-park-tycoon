@@ -21,31 +21,32 @@ namespace ThemeParkTycoonGame.Fancy.Controls
     /// </summary>
     public partial class ShopView : UserControl
     {
-
         public ShopView()
         {
             InitializeComponent();
-            
-            foreach (Product product in Products.All)
-            {
-                productListbox.Items.Clear();
-
-
-                ProductList.Children.Add(new Label()
-                {
-                   Content = product.Name + "     " + product.Price
-                   
-                });
-
-            }
+            RefreshProductList();
 
         }
 
-        private void CreateProductButton_Click(object sender, RoutedEventArgs e)
+        public void RefreshProductList()
         {
-            product product = new product();
-            product.Show();
+            productListbox.Items.Clear();
+
+            foreach (Product product in Products.All)
+                {
+
+                    productListbox.Items.Add(product.Name + "     " + product.Price);
+
+                }
             
         }
+            private void CreateProductButton_Click(object sender, RoutedEventArgs e)
+            {
+                product product = new product();
+                product.ShowDialog();
+                RefreshProductList();
+
+        }
+
     }
 }

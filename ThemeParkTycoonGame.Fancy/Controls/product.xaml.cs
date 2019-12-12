@@ -36,7 +36,10 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         private void AddnewProductButton_Click_1(object sender, RoutedEventArgs e)
         {
             Product product = new Product();
-            product.Name = nameTextBox.Text;
+             product.Name = nameTextBox.Text;
+             
+
+            Products.All.Add(product);
 
             MessageBox.Show(product.Name);
             this.Close();
