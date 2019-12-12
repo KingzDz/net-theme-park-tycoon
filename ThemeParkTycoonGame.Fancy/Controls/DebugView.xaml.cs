@@ -78,8 +78,11 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         
         private void changeWeatherButton_Click(object sender, RoutedEventArgs e)
         {
-            weatherChange weather = new weatherChange();
-            weather.Show();
+            Console.WriteLine("Now changing weather.");
+            Park.DoChangeWeather();
+            Console.WriteLine("Weather: " + Park.CurrentWeather.Name);
+            //weatherChange weather = new weatherChange();
+            //weather.Show();
         }
 
         private void RefreshGuestListButton_Click(object sender, RoutedEventArgs e)

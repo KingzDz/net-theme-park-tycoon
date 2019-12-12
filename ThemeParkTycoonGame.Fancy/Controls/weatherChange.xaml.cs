@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using ThemeParkTycoonGame.Core;
+using ThemeParkTycoonGame.Fancy;
 
 namespace ThemeParkTycoonGame.Fancy.Controls
 {
@@ -19,6 +21,8 @@ namespace ThemeParkTycoonGame.Fancy.Controls
     /// </summary>
     public partial class weatherChange : Window
     {
+        public GuestList Guests;
+
         public weatherChange()
         {
             InitializeComponent();
@@ -26,33 +30,36 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         private void WeatherChangeButton_Click(object sender, RoutedEventArgs e)
         {
-            ThemeParkTycoonGame.Core.Weather.GetRandom();
+
+            //ThemeParkTycoonGame.Core.Weather weather = Core.Weather.GetRandom();
+
+            //ThemeParkTycoonGame.Core.Weather.GetRandom();
 
             //MessageBox.Show(Core.Weather.GetRandom().Name);
-            if (Core.Weather.GetRandom().Name == "Sunny")
-            {
-                imagePictureBox.Tag = "/Resources/weather.sun_48.png";
-                imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_sun_48.png"));
+            //if (weather.Name == "Sunny")
+            //{
+            //    imagePictureBox.Tag = "/Resources/weather.sun_48.png";
+            //    imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_sun_48.png"));
 
-            }
-            else if (Core.Weather.GetRandom().Name == "Rainy")
-            {
-                imagePictureBox.Tag = "/Resources/weather.rain_48.png";
-                imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_rain_48.png"));
+            //}
+            //else if (weather.Name == "Rainy")
+            //{
+            //    imagePictureBox.Tag = "/Resources/weather.rain_48.png";
+            //    imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_rain_48.png"));
 
-            }
-            else if (Core.Weather.GetRandom().Name == "Stormy")
-            {
-                imagePictureBox.Tag = "/Resources/weather.storm_48.png";
-                imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_storm_48.png"));
+            //}
+            //else if (weather.Name == "Stormy")
+            //{
+            //    imagePictureBox.Tag = "/Resources/weather.storm_48.png";
+            //    imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_storm_48.png"));
 
-            }
-            else if (Core.Weather.GetRandom().Name == "Snow")
-            {
-                imagePictureBox.Tag = "/Resources/weather.snow_48.png";
-                imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_snow_48.png"));
+            //}
+            //else if (weather.Name == "Snow")
+            //{
+            //    imagePictureBox.Tag = "/Resources/weather.snow_48.png";
+            //    imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_snow_48.png"));
 
-            }
+            //}
         }
     }
 }

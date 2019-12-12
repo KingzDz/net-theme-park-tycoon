@@ -75,7 +75,36 @@ namespace ThemeParkTycoonGame.Fancy.Windows
         {
             this.park.GuestController.DoTick((int) tickTimer.Interval.TotalMilliseconds);
             this.park.EmployeeController.DoTick((int)tickTimer.Interval.TotalMilliseconds);
-  
+
+            //park.DoChangeWeather();
+            Weather currentWeather = park.CurrentWeather;
+
+            if (currentWeather.Name == "Sunny")
+            {
+                imagePictureBox.Tag = "/Resources/weather.sun_48.png";
+                imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_sun_48.png"));
+
+            }
+            else if (currentWeather.Name == "Rainy")
+            {
+                imagePictureBox.Tag = "/Resources/weather.rain_48.png";
+                imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_rain_48.png"));
+
+            }
+            else if (currentWeather.Name == "Stormy")
+            {
+                imagePictureBox.Tag = "/Resources/weather.storm_48.png";
+                imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_storm_48.png"));
+
+            }
+            else if (currentWeather.Name == "Snow")
+            {
+                imagePictureBox.Tag = "/Resources/weather.snow_48.png";
+                imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_snow_48.png"));
+
+            }
+
+
         }
 
         private void MainWindow_MouseDown(object sender, MouseButtonEventArgs e)
