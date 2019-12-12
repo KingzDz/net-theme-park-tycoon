@@ -15,11 +15,25 @@ namespace ThemeParkTycoonGame.Core
     // StatTypes and their Id's can be found in StatTypes.cs
     public StatBoost Boost = new StatBoost();
 
-        public Employee()
+        public Employee(string role)
         {
             Name = NameGenerator.NextName();
 
-            Boost.StatType = StatTypes.GetByUniqueId("excitement");
+            Function = role;
+            if(Function == "Performer")
+            {
+                Boost.StatType = StatTypes.GetByUniqueId("excitement");
+            }
+            else if(Function == "Mechanic")
+            {
+                Boost.StatType = StatTypes.GetByUniqueId("excitement");
+            }
+            else
+            {
+                Exception exception = new Exception("This function does not exist!");
+                throw exception;
+            }
+            
             Boost.Multiplier = 1.25f;
             Boost.Duration = 60;
         }

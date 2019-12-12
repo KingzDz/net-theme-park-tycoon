@@ -48,8 +48,6 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             }
         }
 
-        GridView grid;
-
         public EmployeeView()
         {
             InitializeComponent();
@@ -59,18 +57,17 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         private void AddEmployeeButton_Click(object sender, RoutedEventArgs e)
         {
-            Employee NewEmployee = new Employee();
-            NewEmployee.Function = "Performer";
+            string role = "Performer";
+            Employee NewEmployee = new Employee(role);
             NewEmployee.Boost.StatType = StatTypes.GetByUniqueId("excitement");
 
             Employees.Add(NewEmployee);
-            //employeeListView.Items.Add(NewEmployee);
         }
 
         private void FireButton_Click(object sender, RoutedEventArgs e)
         {
-            string employeeName = (string)employeeListView.Items[employeeListView.SelectedIndex];
-
+            Employees.RemoveAt(employeeListView.SelectedIndex);
+            
         }
 
     }

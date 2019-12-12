@@ -79,10 +79,14 @@ namespace ThemeParkTycoonGame.Core
         }
         public void MaintenanceAction(Employee employee)
         {
-            foreach (Ride ride in Park.ParkInventory.Rides)
-            {
-                // doet nog niks
-            }
+            // Dit krijgen we niet af
+            //foreach (Ride ride in Park.ParkInventory.Rides)
+            //{
+            //    if (rng.Next(0, 6) == 0)
+            //    {
+            //        ride.StatisticBoosts.Add(employee.Boost);
+            //    }
+            //}
         }
     }  
 }
