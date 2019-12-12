@@ -2,9 +2,9 @@
 {
     public class Product
     {
-        public string Name { get; }
-        public string Description { get; }
-        public double Price { get; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public double Price { get; set; }
 
         public Product()
         {
@@ -21,6 +21,5 @@
             Description = description;
             Price = price;
         }
-
     }
 }

@@ -19,9 +19,8 @@ namespace ThemeParkTycoonGame.Fancy.Controls
     /// </summary>
     public partial class ProductView : Window
     {
-        public product productData;
 
-        public product()
+        public Product()
         {
             InitializeComponent();
         }
@@ -33,11 +32,9 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         private void AddnewProductButton_Click_1(object sender, RoutedEventArgs e)
         {
-            product product = new product();
+            Product product = new Product();
 
-            product.Name = nameTextBox.Text;
-
-           
+            product.Name = nameTextBox.Text;         
 
             this.Close();
         }
@@ -48,7 +45,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             int priceup = int.Parse(price);
             int newprice;
             newprice = priceup + 1;
-           priceTextBox.Text = newprice.ToString();
+            priceTextBox.Text = newprice.ToString();
         }
 
         private void priceLowerButton_Click(object sender, RoutedEventArgs e)

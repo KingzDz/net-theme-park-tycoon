@@ -26,14 +26,18 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         {
             InitializeComponent();
             
-            //foreach (ProductView product in Products.All)
-            //{
-             //   ProductList.Children.Add(new Label()
-               // {
-             //       Content = product.Name
-               // });
+            foreach (Product product in Products.All)
+            {
+                productListbox.Items.Clear();
 
-           // }
+
+                ProductList.Children.Add(new Label()
+                {
+                   Content = product.Name + "     " + product.Price
+                   
+                });
+
+            }
 
         }
 
