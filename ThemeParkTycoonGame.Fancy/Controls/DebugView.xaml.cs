@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,16 +23,19 @@ namespace ThemeParkTycoonGame.Fancy.Controls
     /// </summary>
     public partial class DebugView : UserControl
     {
-        public GuestController guestController;
-        public GuestList guests;
+        public GuestController GuestController;
+        public GuestList Guests;
         public DebugGuestView debugGuestView;
+        public Park Park;
 
         
         public DebugView()
         {
             InitializeComponent();
+            
             debugGuestView = new DebugGuestView();
             controlParent.Children.Add(debugGuestView);
+            
             controlParent.Visibility = Visibility.Hidden;
             debugGuestView.debugView = this;
            
@@ -40,7 +44,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         private void EditGuestButton_Click(object sender, RoutedEventArgs e)
         {
-            if(guests.Guests.Count>0)
+            if(Guests.Guests.Count>0)
             {
            
                try
@@ -63,7 +67,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         {
             Guest guest = new Guest();
 
-            guests.Guests.Add(guest); // Add created guest to guest list
+            Guests.Guests.Add(guest); // Add created guest to guest list
 
             // Show message box
             string message = "There has been added a guest succesfully!";
@@ -81,13 +85,26 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         private void RefreshGuestListButton_Click(object sender, RoutedEventArgs e)
         {
             debugGuestView.guestsListView.Items.Clear();
-            for (int i = 0; i < guests.Count(); i++)
+            for (int i = 0; i < Guests.Count(); i++)
             {
-                debugGuestView.guestsListView.Items.Add(guests.Guests[i]);
+                debugGuestView.guestsListView.Items.Add(Guests.Guests[i]);
                 debugGuestView.guestsListView.Items.Refresh();
                 //guests.Guests[0].Name = "Fucker";
             }
             debugGuestView.guestsListView.Items.Refresh();
+        }
+
+        private void AddMoneyButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Park.ParkWallet.SubtractFromBalance(-10000, "A mysterious being gave the park money.");
+            MessageBox.Show("your balance is now: " + Park.ParkWallet.balance.ToString());
+        }
+
+        private void AddThousandButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+            this.Park.ParkWallet.SubtractFromBalance(-1000, "A mysterious being gave the park money.");
+            MessageBox.Show("Your balance is now: " + Park.ParkWallet.balance.ToString());
         }
     }
 }

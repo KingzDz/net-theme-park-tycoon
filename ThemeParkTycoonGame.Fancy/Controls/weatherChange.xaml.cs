@@ -26,11 +26,33 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         private void WeatherChangeButton_Click(object sender, RoutedEventArgs e)
         {
-            string[] weathers = { "rain", "storm", "sun" };
-            Random rand = new Random();
-            int index = rand.Next(weathers.Length);
+            ThemeParkTycoonGame.Core.Weather.GetRandom();
 
-            MessageBox.Show(weathers[index]);
+            //MessageBox.Show(Core.Weather.GetRandom().Name);
+            if (Core.Weather.GetRandom().Name == "Sunny")
+            {
+                imagePictureBox.Tag = "/Resources/weather.sun_48.png";
+                imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_sun_48.png"));
+
+            }
+            else if (Core.Weather.GetRandom().Name == "Rainy")
+            {
+                imagePictureBox.Tag = "/Resources/weather.rain_48.png";
+                imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_rain_48.png"));
+
+            }
+            else if (Core.Weather.GetRandom().Name == "Stormy")
+            {
+                imagePictureBox.Tag = "/Resources/weather.storm_48.png";
+                imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_storm_48.png"));
+
+            }
+            else if (Core.Weather.GetRandom().Name == "Snow")
+            {
+                imagePictureBox.Tag = "/Resources/weather.snow_48.png";
+                imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_snow_48.png"));
+
+            }
         }
     }
 }

@@ -60,7 +60,8 @@ namespace ThemeParkTycoonGame.Forms.Screens
 
         private void generateMoreMoneyButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Feature to add 10,000 cash not completed");
+            //MessageBox.Show("Feature to add 10,000 cash not completed");
+            this.park.ParkWallet.SubtractFromBalance(-10000, "A mysterious being gave the park money.");
         }
 
         private void moreButton_Click(object sender, EventArgs e)

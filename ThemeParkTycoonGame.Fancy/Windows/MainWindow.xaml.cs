@@ -23,7 +23,7 @@ namespace ThemeParkTycoonGame.Fancy.Windows
     public partial class MainWindow : Window
     {
         private DispatcherTimer tickTimer;
-        private Park park;
+        public Park park;
 
         public MainWindow()
         {
@@ -45,8 +45,8 @@ namespace ThemeParkTycoonGame.Fancy.Windows
 
             // Give the guest information to the Guest Control and Employee Control
             guestsControl.Guests = this.park.Guests;
-            debugControl.guests = this.park.Guests;
-           
+            debugControl.Guests = this.park.Guests;
+            debugControl.Park = this.park;
 
             employeeControl.Guests = this.park.Guests;
             employeeControl.Employees = this.park.Employees;
@@ -88,5 +88,9 @@ namespace ThemeParkTycoonGame.Fancy.Windows
             this.Close();
         }
 
+        private void parkControl_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
