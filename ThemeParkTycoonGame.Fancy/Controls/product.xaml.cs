@@ -37,6 +37,8 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         {
             Product product = new Product();
              product.Name = nameTextBox.Text;
+            double productPrice = double.Parse(priceTextBox.Text);
+            product.Price = productPrice;
              
 
             Products.All.Add(product);
