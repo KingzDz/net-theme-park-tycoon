@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,7 +23,7 @@ namespace ThemeParkTycoonGame.Core
         public ParkInventory ParkInventory;
         public decimal EntryFee;
 
-        public List<Employee> Employees;
+        public ObservableCollection<Employee> Employees;
         public EmployeeController EmployeeController;
 
         public GuestController GuestController;
@@ -69,7 +70,7 @@ namespace ThemeParkTycoonGame.Core
 
             desirables = new List<Desire>();
 
-            Employees = new List<Employee>();
+            Employees = new ObservableCollection<Employee>();
             EmployeeController = new EmployeeController(this);
 
             GuestController = new GuestController(desirables, ref Guests);

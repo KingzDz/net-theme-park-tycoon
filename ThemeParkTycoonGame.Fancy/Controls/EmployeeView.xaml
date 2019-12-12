@@ -19,9 +19,10 @@
         <ListView x:Name="employeeListView" HorizontalAlignment="Left" Height="235" Margin="30,44,0,0" VerticalAlignment="Top" Width="725" Grid.Column="1" ItemsSource="{Binding Employees}">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn x:Name="nameColumn" Header="Naam" Width="350" DisplayMemberBinding="{Binding Path=Name}"/>
-                    <GridViewColumn x:Name="salaryColumn" Header="Salaris" Width="100" DisplayMemberBinding="{Binding Path=Salary}"/>
-                    <GridViewColumn x:Name="functionColumn" Header="Functie" Width="275" DisplayMemberBinding="{Binding Path=Function}"/>
+                    <GridViewColumn x:Name="nameColumn" Header="Naam" Width="325" DisplayMemberBinding="{Binding Path=Name}"/>
+                    <GridViewColumn x:Name="efficiencyColumn" Header="Efficientië" Width="90" DisplayMemberBinding="{Binding Path=Efficiency}"/>
+                    <GridViewColumn x:Name="salaryColumn" Header="Salaris" Width="75" DisplayMemberBinding="{Binding Path=Salary}"/>
+                    <GridViewColumn x:Name="functionColumn" Header="Functie" Width="235" DisplayMemberBinding="{Binding Path=Function}"/>
                 </GridView>
             </ListView.View>
         </ListView>

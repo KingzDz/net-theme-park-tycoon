@@ -49,7 +49,7 @@ namespace ThemeParkTycoonGame.Fancy.Windows
            
 
             employeeControl.Guests = this.park.Guests;
-            employeeControl.Employees = new System.Collections.ObjectModel.ObservableCollection<Employee>(this.park.Employees);//this.park.Employees;
+            employeeControl.Employees = this.park.Employees;//this.park.Employees;
 
             // This allows us to bind to every property in a park (like EntryFee, Name, Guests, etc)
             this.DataContext = this.park;

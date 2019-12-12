@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
+using System.Windows.Forms;
 
 namespace ThemeParkTycoonGame.Core
 {
     public class EmployeeController
     {
-        public List<Employee> WorkerList;
+        public ObservableCollection<Employee> WorkerList;
         Park Park;
 
         bool hasTicked;
@@ -58,7 +60,7 @@ namespace ThemeParkTycoonGame.Core
                     PerformerAction(employee);
                 }
 
-                else if(employee.Function == "Maintenance")
+                else if (employee.Function == "Maintenance")
                 {
                     MaintenanceAction(employee);
                 }

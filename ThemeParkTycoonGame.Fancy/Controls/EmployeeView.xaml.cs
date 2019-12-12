@@ -59,8 +59,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         {
             string role = "Performer";
             Employee NewEmployee = new Employee(role);
-            NewEmployee.Boost.StatType = StatTypes.GetByUniqueId("excitement");
-
+            
             Employees.Add(NewEmployee);
         }
 
