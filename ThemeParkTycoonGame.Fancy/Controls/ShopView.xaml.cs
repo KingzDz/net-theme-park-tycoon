@@ -54,8 +54,8 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         private void editProductButton_Click(object sender, RoutedEventArgs e)
         {
-
-
+            if (productListbox.Items.IndexOf(productListbox.SelectedItem) >= 0) {
+                if (nameTextBox.Text != "") { 
             Product product = new Product();
             product.Name = nameTextBox.Text;
             double productPrice = double.Parse(priceTextBox.Text);
@@ -66,7 +66,16 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
 
             productListbox.Items.Add(product.Name + "     " + product.Price);
-
+                }
+                else
+                {
+                    MessageBox.Show("u moet een naam van het product invullen!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Selecteer welk product u wilt veranderen");
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -96,8 +105,14 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         private void removeProductButton_Click(object sender, RoutedEventArgs e)
         {
+            if (productListbox.Items.IndexOf(productListbox.SelectedItem) >= 0)
+            { 
             productListbox.Items.RemoveAt(productListbox.Items.IndexOf(productListbox.SelectedItem));
-
+            }
+            else
+            {
+                MessageBox.Show("Selecteer welk product u wilt verwijderen");
+            }
         }
     }
 }
