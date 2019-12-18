@@ -55,18 +55,18 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         private void editProductButton_Click(object sender, RoutedEventArgs e)
         {
 
-            
 
             Product product = new Product();
             product.Name = nameTextBox.Text;
             double productPrice = double.Parse(priceTextBox.Text);
             product.Price = productPrice;
 
+            Products.All.Add(product);
             productListbox.Items.RemoveAt(productListbox.Items.IndexOf(productListbox.SelectedItem));
 
 
-            productListbox.Items.Add(product);
-            
+            productListbox.Items.Add(product.Name + "     " + product.Price);
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
