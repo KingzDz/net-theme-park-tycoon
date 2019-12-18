@@ -54,28 +54,33 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         private void editProductButton_Click(object sender, RoutedEventArgs e)
         {
-            if (productListbox.Items.IndexOf(productListbox.SelectedItem) >= 0) {
-                if (nameTextBox.Text != "") { 
-            Product product = new Product();
-            product.Name = nameTextBox.Text;
-            double productPrice = double.Parse(priceTextBox.Text);
-            product.Price = productPrice;
-
-            Products.All.Add(product);
-            productListbox.Items.RemoveAt(productListbox.Items.IndexOf(productListbox.SelectedItem));
-
-
-            productListbox.Items.Add(product.Name + "     " + product.Price);
-                }
-                else
-                {
-                    MessageBox.Show("u moet een naam van het product invullen!");
-                }
+            if(productListbox.SelectedItem == null)
+            {                
+                MessageBox.Show("selecteer eerst een product");
+            }
+            else if (nameTextBox.Text == "")
+            {
+                MessageBox.Show("u moet een naam voor dit product invullen");
+            }
+            else if (priceTextBox.Text == "0")
+            {
+                MessageBox.Show("u moet nog een prijs ingeven voor dit product");
             }
             else
             {
-                MessageBox.Show("Selecteer welk product u wilt veranderen");
+                Product product = new Product();
+                product.Name = nameTextBox.Text;
+                double productPrice = double.Parse(priceTextBox.Text);
+                product.Price = productPrice;
+
+                Products.All.Add(product);
+                productListbox.Items.RemoveAt(productListbox.Items.IndexOf(productListbox.SelectedItem));
+
+
+                productListbox.Items.Add(product.Name + "     " + product.Price);
             }
+
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -105,9 +110,9 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         private void removeProductButton_Click(object sender, RoutedEventArgs e)
         {
-            if (productListbox.Items.IndexOf(productListbox.SelectedItem) >= 0)
-            { 
-            productListbox.Items.RemoveAt(productListbox.Items.IndexOf(productListbox.SelectedItem));
+            if (productListbox.SelectedItem == null)
+            {
+                MessageBox.Show("selecteer eerst een product");
             }
             else
             {
