@@ -19,6 +19,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
     /// <summary>
     /// Interaction logic for ShopView.xaml
     /// </summary>
+    /// </summary>
     public partial class ShopView : UserControl
     {
         public ShopView()
@@ -36,18 +37,18 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             productListbox.Items.Clear();
 
             foreach (Product product in Products.All)
-                {
-
-                    productListbox.Items.Add(product.Name + "     " + product.Price);
-
-                }
-            
-        }
-            private void CreateProductButton_Click(object sender, RoutedEventArgs e)
             {
-                product product = new product();
-                product.ShowDialog();
-                RefreshProductList();
+
+                productListbox.Items.Add(product.Name + "     " + product.Price);
+
+            }
+
+        }
+        private void CreateProductButton_Click(object sender, RoutedEventArgs e)
+        {
+            product product = new product();
+            product.ShowDialog();
+            RefreshProductList();
 
         }
 
@@ -92,5 +93,13 @@ namespace ThemeParkTycoonGame.Fancy.Controls
                 MessageBox.Show("Please Enter a value greater than Zero");
             }
         }
+
+        private void removeProductButton_Click(object sender, RoutedEventArgs e)
+        {
+            productListbox.Items.RemoveAt(productListbox.Items.IndexOf(productListbox.SelectedItem));
+
+        }
     }
 }
+
+

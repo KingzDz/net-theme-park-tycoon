@@ -13,7 +13,7 @@
          
         </ListView>
         <Button Name="createProductButton" Height="50px" Width="150px" HorizontalAlignment="Right" Margin="50px 50px" VerticalAlignment="Top" Click="CreateProductButton_Click" >Create new product</Button>
-        <Button Height="50" Width="100" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="50px 50px" Name="removeProductButton">Remove</Button>
+        <Button Height="50" Width="100" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="50px 50px" Name="removeProductButton" Click="removeProductButton_Click">Remove</Button>
         <Button x:Name="editProductButton" Height="50px" Width="150px" HorizontalAlignment="Right" Margin="0,192,50,0" VerticalAlignment="Top" Content="Edit product" Click="editProductButton_Click" />
         <TextBox HorizontalAlignment="Left" Name="nameTextBox" Height="23" Margin="600,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Name="priceNameLabel" VerticalAlignment="Top" Margin="536,137,205,0">Price:</Label>
