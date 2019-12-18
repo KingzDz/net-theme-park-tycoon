@@ -84,6 +84,8 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             RefreshRides();
             RefreshBalance();
             BuyButton.Visibility = Visibility.Collapsed;
+            balanceLabel.Content = "Balance: " + park.ParkWallet.Balance.ToString();
+            
         }
 
         private void RefreshBalance()
@@ -122,7 +124,5 @@ namespace ThemeParkTycoonGame.Fancy.Controls
                 }
             }
         }
-
-
     }
 }
