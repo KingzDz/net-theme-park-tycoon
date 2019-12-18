@@ -13,13 +13,13 @@
          
         </ListView>
         <Button Name="createProductButton" Height="50px" Width="150px" HorizontalAlignment="Right" Margin="50px 50px" VerticalAlignment="Top" Click="CreateProductButton_Click" >Create new product</Button>
-        <Button Height="50" Width="100" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="50px 50px" Name="removeProductButton" Click="removeProductButton_Click">Remove</Button>
-        <Button x:Name="editProductButton" Height="50px" Width="150px" HorizontalAlignment="Right" Margin="0,192,50,0" VerticalAlignment="Top" Content="Edit product" Click="editProductButton_Click" />
-        <TextBox HorizontalAlignment="Left" Name="nameTextBox" Height="23" Margin="600,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Name="priceNameLabel" VerticalAlignment="Top" Margin="536,137,205,0">Price:</Label>
-        <TextBox Name="priceTextBox" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="600,137,0,0" Width="50px" Height="25px">0</TextBox>
-        <Label x:Name="priceNameLabel_Copy" VerticalAlignment="Top" Margin="536,114,205,0" Content="Name:"/>
-        <Button Name="pricePlusButton" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="650,137,0,0" Height="25" Click="Button_Click"/>
-        <Button Name="priceDownButton" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="675,137,0,0" Height="25" Click="priceDownButton_Click"/>
+        <Button Height="50" Width="150" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="50px 50px" Name="removeProductButton" Click="removeProductButton_Click">Remove</Button>
+        <Button x:Name="editProductButton" Height="50px" Width="150px" HorizontalAlignment="Right" Margin="0,250,50,0" VerticalAlignment="Top" Content="Edit product" Click="editProductButton_Click" />
+        <TextBox HorizontalAlignment="Left" Name="nameTextBox" Height="23" Margin="600,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Name="priceNameLabel" VerticalAlignment="Top" Margin="536,200,205,0">Price:</Label>
+        <TextBox Name="priceTextBox" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="600,200,0,0" Width="50px" Height="25px">0</TextBox>
+        <Label x:Name="priceNameLabel_Copy" VerticalAlignment="Top" Margin="536,175,205,0" Content="Name:"/>
+        <Button Name="pricePlusButton" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="650,200,0,0" Height="25" Click="Button_Click"/>
+        <Button Name="priceDownButton" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="675,200,0,0" Height="25" Click="priceDownButton_Click"/>
     </Grid>
 </UserControl>
