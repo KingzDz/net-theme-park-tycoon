@@ -27,6 +27,9 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             RefreshProductList();
 
         }
+        public Product product;
+
+        public string selectedProduct { get; set; }
 
         public void RefreshProductList()
         {
@@ -48,5 +51,43 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         }
 
+        private void editProductButton_Click(object sender, RoutedEventArgs e)
+        {
+            Product product = new Product();
+            product.Name = nameTextBox.Text;
+            double productPrice = double.Parse(priceTextBox.Text);
+            product.Price = productPrice;
+
+            productListbox.SelectedItems.Remove(product);
+            productListbox.Items.Add(product);
+            
+
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string price = priceTextBox.Text;
+            int priceup = int.Parse(price);
+            int newprice = priceup + 1;
+            priceTextBox.Text = newprice.ToString();
+
+        }
+
+        private void priceDownButton_Click(object sender, RoutedEventArgs e)
+        {
+            string price = priceTextBox.Text;
+            int pricedown = int.Parse(price);
+            if (pricedown < 0)
+            {
+                int newprice;
+                newprice = pricedown - 1;
+                priceTextBox.Text = newprice.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Please Enter a value greater than Zero");
+            }
+        }
     }
 }

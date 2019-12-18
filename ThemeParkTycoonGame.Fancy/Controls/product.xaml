@@ -11,10 +11,10 @@
         <TextBox Name="nameTextBox" Height="25px" Width="100px" VerticalAlignment="Top" HorizontalAlignment="Center"></TextBox>
         <Label Name="pictureLabel" VerticalAlignment="Top" Margin="0 25px 0 0">Picture:</Label>
         <Button Name="iconpicture" Width="100px" Height="25px" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0 25px 0 0" Click="iconpicture_Click">add icon</Button>
-        <Label Name="priceNameLabel" VerticalAlignment="Top" Margin="0 50px 0 0">Price:</Label>
-        <TextBox Name="priceTextBox" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="143px 50px 0 0" Width="50px" Height="25px">0</TextBox>
-        <Button x:Name="priceHigherButton" Height="25px" Width="25px" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="193px 50px 0 0" Click="priceHigherButton_Click">+</Button>
-        <Button x:Name="priceLowerButton" Height="25px" Width="25px" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="218px 50px 0 0" Click="priceLowerButton_Click">-</Button>
+        <Label Name="priceNameLabel" VerticalAlignment="Top" Margin="0,50,0,0">Price:</Label>
+        <TextBox Name="priceTextBox" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="146,51,0,0" Width="50px" Height="25px">0</TextBox>
+        <Button x:Name="priceHigherButton" Height="25px" Width="25px" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="196,51,0,0" Click="priceHigherButton_Click">+</Button>
+        <Button x:Name="priceLowerButton" Height="25px" Width="25px" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="221,51,0,0" Click="priceLowerButton_Click">-</Button>
         <Label Name="statsLabel" VerticalAlignment="Top" Margin="0 100px 0 0">Stats:</Label>
         <ListBox Name="statListBox" Height="160px" Width="285px" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="0 0 0 25px"></ListBox>
         <Button Height="50px" Width="100px" Name="addStatButton" VerticalAlignment="Center" HorizontalAlignment="Right">Add Stat</Button>
