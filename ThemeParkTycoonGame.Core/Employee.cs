@@ -18,8 +18,8 @@ namespace ThemeParkTycoonGame.Core
         public Employee(string role)
         {
             Name = NameGenerator.NextName();
-            Random random = new Random();
-            int Randomizer = random.Next(0, 10);
+       
+            int Randomizer = NumberGenerator.Next(0, 10);
 
             Function = role;
             if(Function == "Performer")
@@ -44,16 +44,19 @@ namespace ThemeParkTycoonGame.Core
             if (Randomizer == 0)
             {
                 Efficiency = 'A';
-                Boost.Multiplier += 0.5f;
+                Salary = 110;
+                Boost.Multiplier += 0.6f;
             }
             else if (Randomizer > 0 && Randomizer <= 5)
             {
                 Efficiency = 'B';
+                Salary = 100;
                 Boost.Multiplier += 0.35f;
             }
             else if (Randomizer > 5)
             {
                 Efficiency = 'C';
+                Salary = 90;
                 Boost.Multiplier += 0.2f;
             }
         }

@@ -48,6 +48,9 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             }
         }
 
+        EmployeeApplicationsWindow form = new EmployeeApplicationsWindow();
+        Random rng = new Random();
+
         public EmployeeView()
         {
             InitializeComponent();
@@ -55,12 +58,22 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             this.DataContext = this;
         }
 
+
+
         private void AddEmployeeButton_Click(object sender, RoutedEventArgs e)
         {
-            string role = "Performer";
-            Employee NewEmployee = new Employee(role);
-            
-            Employees.Add(NewEmployee);
+            if (rng.Next(0, 4) == 1)
+            {
+                form.HireableEmployees.Add(new Employee("Performer"));
+            }
+
+            form.ShowDialog();
+
+            if(form.HiredEmployee != null && form.IsHired)
+            {
+                Employees.Add(form.HiredEmployee);
+                form.IsHired = false;
+            }
         }
 
         private void FireButton_Click(object sender, RoutedEventArgs e)
@@ -68,6 +81,5 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             Employees.RemoveAt(employeeListView.SelectedIndex);
             
         }
-
     }
 }
