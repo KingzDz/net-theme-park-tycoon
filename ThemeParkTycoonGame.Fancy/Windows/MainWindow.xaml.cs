@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -50,6 +50,12 @@ namespace ThemeParkTycoonGame.Fancy.Windows
 
             employeeControl.Guests = this.park.Guests;
             employeeControl.Employees = this.park.Employees;
+
+            // Give the park information to the marketControl
+            marketControl.Park = this.park;
+
+            // Give the park information to the marketControl
+            InventoryView.Park = this.park;
 
             // This allows us to bind to every property in a park (like EntryFee, Name, Guests, etc)
             this.DataContext = this.park;

@@ -39,7 +39,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Speech" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp">
@@ -157,6 +156,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\dinoarcade.webp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -166,6 +166,165 @@
       <Project>{8d84d669-2a34-4ee4-9058-e4458008ff61}</Project>
       <Name>ThemeParkTycoonGame.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloonhouse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloons_48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloons_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beersouvenir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candyfloss.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caterpie_48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caterpie_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\efteling_baron1898.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\efteling_python.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\efteling_vogelrok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fastandfurioussupercharged.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ferris_wheel_48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ferris_wheel_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food_48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forumularossa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\general_ledger_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guests_48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guests_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hoghwartsexpress.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotdog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ironmaiden.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kingdaka.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kraken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\platform934.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roller_coaster_48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roller_coaster_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule_event_48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule_event_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slotzilla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spacemountain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\startours.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\starwarscantina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stats_48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stats_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\towerofterror.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unavailable_48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unavailable_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voletarium.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walibi_goliath.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walibi_robin_hood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weather_rain_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weather_snow_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weather_storm_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weather_sun_48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weather_sun_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\worker_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\worknroll.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
