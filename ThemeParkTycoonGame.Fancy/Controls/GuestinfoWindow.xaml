@@ -71,6 +71,10 @@
 
             </StackPanel>
         </GroupBox>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Image x:Name="imagePictureBox"  Height="50" Width="50"></Image>
+          
+        </StackPanel>
 
         <!--<Label>Financial:</Label>
         <StackPanel Orientation="Horizontal">

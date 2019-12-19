@@ -9,6 +9,7 @@
     <Grid>
         <ListView ItemsSource="{Binding Path=Guests}"
                   x:Name="guestsListView" MouseLeftButtonUp="GuestsListView_MouseLeftButtonUp">
+           
         </ListView>
 
     </Grid>

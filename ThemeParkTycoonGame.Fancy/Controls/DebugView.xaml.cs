@@ -46,7 +46,12 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         {
             if(Guests.Guests.Count>0)
             {
-           
+                if (Application.Current.MainWindow.Height < 600)
+                {
+                    Application.Current.MainWindow.Height = 660;
+                }
+
+
                try
                 {
 
