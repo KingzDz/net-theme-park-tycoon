@@ -89,6 +89,7 @@ namespace ThemeParkTycoonGame.Fancy.Windows
             {
                 imagePictureBox.Tag = "/Resources/weather.rain_48.png";
                 imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_rain_48.png"));
+                
 
             }
             else if (currentWeather.Name == "Stormy")
