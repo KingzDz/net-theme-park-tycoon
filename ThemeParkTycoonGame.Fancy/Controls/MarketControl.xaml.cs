@@ -128,10 +128,5 @@ namespace ThemeParkTycoonGame.Fancy.Controls
                 }
             }
         }
-
-        private void DataTemplate_Scroll(object sender, System.Windows.Controls.Primitives.ScrollEventArgs e)
-        {
-
-        }
     }
 }

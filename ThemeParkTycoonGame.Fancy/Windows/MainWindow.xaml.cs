@@ -46,6 +46,9 @@ namespace ThemeParkTycoonGame.Fancy.Windows
             // Give the park information to the marketControl
             marketControl.Park = this.park;
 
+            // Give the park information to the marketControl
+            InventoryView.Park = this.park;
+
             // Give the guest information to the Guest Control
             guestsControl.Guests = this.park.Guests;
 
