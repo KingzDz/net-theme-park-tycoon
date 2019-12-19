@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,7 +23,7 @@ namespace ThemeParkTycoonGame.Fancy.Windows
     public partial class MainWindow : Window
     {
         private DispatcherTimer tickTimer;
-        private Park park;
+        public Park park;
 
         public MainWindow()
         {
@@ -80,17 +80,51 @@ namespace ThemeParkTycoonGame.Fancy.Windows
         private void TickTimer_Tick(object sender, EventArgs e)
         {
             this.park.GuestController.DoTick((int) tickTimer.Interval.TotalMilliseconds);
+            this.park.EmployeeController.DoTick((int)tickTimer.Interval.TotalMilliseconds);
+
+            //park.DoChangeWeather();
+            Weather currentWeather = park.CurrentWeather;
+
+            if (currentWeather.Name == "Sunny")
+            {
+                imagePictureBox.Tag = "/Resources/weather.sun_48.png";
+                imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_sun_48.png"));
+
+            }
+            else if (currentWeather.Name == "Rainy")
+            {
+                imagePictureBox.Tag = "/Resources/weather.rain_48.png";
+                imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_rain_48.png"));
+                
+
+            }
+            else if (currentWeather.Name == "Stormy")
+            {
+                imagePictureBox.Tag = "/Resources/weather.storm_48.png";
+                imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_storm_48.png"));
+
+            }
+            else if (currentWeather.Name == "Snow")
+            {
+                imagePictureBox.Tag = "/Resources/weather.snow_48.png";
+                imagePictureBox.Source = new BitmapImage(new Uri("pack://siteoforigin:,,,/Resources/weather_snow_48.png"));
+
+            }
+
+
         }
 
         private void MainWindow_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            this.DragMove();
+            if (e.LeftButton == MouseButtonState.Pressed )
+                this.DragMove();
         }
 
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
+
         private void parkControl_Loaded(object sender, RoutedEventArgs e)
         {
 
