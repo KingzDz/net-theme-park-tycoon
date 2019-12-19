@@ -210,7 +210,9 @@
     <None Include="Resources\hoghwartsexpress.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\dinoarcade.png" />
+    <None Include="Resources\dinoarcade.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\dinoarcade - Copy.png" />

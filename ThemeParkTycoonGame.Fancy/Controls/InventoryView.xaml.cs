@@ -43,9 +43,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         private void StackPanel_Loaded(object sender, RoutedEventArgs e)
         {
-
             RefreshInventory();
-
         }
 
         public void RefreshInventory()
@@ -62,17 +60,28 @@ namespace ThemeParkTycoonGame.Fancy.Controls
                 }
                 else
                 {
-                    InventoryList.Items.Add(park.ParkInventory.Rides[i].Name);
-                    
+                    //InventoryList.Items.Add(park.ParkInventory.Rides[i].Name);
+                    InventoryList.Items.Add(park.ParkInventory.Rides[i]);
                 }
 
             }
         }
 
 
-        private void RefreshButton_Click(object sender, RoutedEventArgs e)
+        private void listView_Click(object sender, RoutedEventArgs e)
         {
-            
+            Marketplace marketplace = Marketplace.Instance;
+            List<Ride> buyableRides = marketplace.GetBuyableRides(park.ParkInventory);
+
+            var item = (sender as ListView).SelectedItem;
+            if (item != null)
+            {
+                Ride ride = item as Ride;
+
+                NameLabel.Content = "Name: " + ride.Name;
+                DurationLabel.Content = "Duration: " + ride.Duration;
+                EntryFee.Content = "Entry Fee: " + ride.EntryFee.ToString();
+            }
         }
     }
 }

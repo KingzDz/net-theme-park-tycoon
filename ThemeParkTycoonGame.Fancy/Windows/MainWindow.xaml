@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ThemeParkTycoonGame.Fancy.Windows"
         xmlns:controls="clr-namespace:ThemeParkTycoonGame.Fancy.Controls"
         mc:Ignorable="d"
-        Title="{Binding Path=Name}" Height="450" Width="800" WindowStyle="None">
+        Title="{Binding Path=Name}" Height="450" Width="800" WindowStyle="SingleBorderWindow">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -18,9 +18,6 @@
                  <Run Text="Theme Park Tycoon Game - " />
                  <Run Text="{Binding Name}" />
             </TextBlock>
-            <Button Click="CloseButton_Click" 
-                    Content="Close"
-                    x:Name="closeButton"/>
         </StackPanel>
         <Grid Grid.Row="1">
             <TabControl>

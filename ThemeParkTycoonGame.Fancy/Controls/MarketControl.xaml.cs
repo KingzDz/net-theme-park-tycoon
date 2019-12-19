@@ -47,16 +47,8 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             for (int i = 0; i < buyableRidesCount; i++)
             {
                 ShopList.Items.Add(buyableRides[i]);
-                //ShopList.Items.Add(new DirectoryListing()
-                //{
-                //    Name = buyableRides[i].Name,
-                //    Path = buyableRides[i].Image.ToString()
-
-                //});
-                //ShopList.Items.Add(buyableRides[i].Name + buyableRides[i].Image);
             }
 
-            BuyButton.Visibility = Visibility.Collapsed;
             NameLabel.Content = "";
             DurationLabel.Content = "";
             CostLabel.Content = "";
@@ -80,7 +72,6 @@ namespace ThemeParkTycoonGame.Fancy.Controls
                         NameLabel.Content = "Name: " + buyableRides[i].Name;
                         DurationLabel.Content = "Duration: " + buyableRides[i].Duration;
                         CostLabel.Content = "Cost: " + buyableRides[i].Cost;
-
                     }
                 }
             }
@@ -88,6 +79,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
 
         private void StackPanel_Loaded(object sender, RoutedEventArgs e)
         {
+            BuyButton.Visibility = Visibility.Collapsed;
             RefreshRides();
             RefreshBalance();
         }

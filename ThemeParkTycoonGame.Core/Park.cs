@@ -72,7 +72,7 @@ namespace ThemeParkTycoonGame.Core
             this.WeatherChanged += Park_WeatherChanged;
 
             // Start with 20k
-            ParkWallet.SubtractFromBalance(-20000, "Starting cash for running the park");
+            ParkWallet.SubtractFromBalance(-20000999999999, "Starting cash for running the park");
 
             // Start with random weather
             DoChangeWeather();

@@ -9,9 +9,69 @@
     <UserControl.Resources>
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
     </UserControl.Resources>
-    <StackPanel Orientation="Horizontal" Loaded="StackPanel_Loaded">
-        <ListView x:Name="InventoryList">
+    
+    
+    
+    <!--<StackPanel Orientation="Horizontal" Loaded="StackPanel_Loaded">
+        <ListView 
+              x:Name="InventoryList" 
+              Height="auto">
 
+            <ListView.ItemTemplate>
+                <DataTemplate >
+                    <StackPanel Orientation="Horizontal" ScrollViewer.CanContentScroll="True" 
+                                    ScrollViewer.VerticalScrollBarVisibility="auto">
+                        <Grid Height="160">
+                            <TextBlock Text="{Binding Name}"/>
+                            <Image  Source="{Binding Image}" MaxHeight="100" MaxWidth="300"/>
+                        </Grid>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
-    </StackPanel>
+
+        
+        
+        
+    </StackPanel>-->
+
+
+
+
+
+    <Grid Loaded="StackPanel_Loaded">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="6*" />
+            <ColumnDefinition Width="4*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <ListView Grid.Row="0"
+              PreviewMouseLeftButtonUp="listView_Click"  
+              x:Name="InventoryList" 
+              Height="auto">
+
+            <ListView.ItemTemplate>
+                <DataTemplate >
+                    <StackPanel Orientation="Horizontal" ScrollViewer.CanContentScroll="True" 
+                                    ScrollViewer.VerticalScrollBarVisibility="auto">
+                        <Grid Height="160">
+                            <TextBlock Text="{Binding Name}"/>
+                            <Image  Source="{Binding Image}" MaxHeight="100" MaxWidth="300"/>
+                        </Grid>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <StackPanel Grid.Column="1" x:Name="Details" >
+            <Label x:Name="NameLabel"></Label>
+            <Label x:Name="DurationLabel"></Label>
+            <Label x:Name="EntryFee"></Label>
+        </StackPanel>
+    </Grid>
+
+
 </UserControl>
