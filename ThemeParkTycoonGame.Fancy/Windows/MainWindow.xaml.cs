@@ -110,13 +110,8 @@ namespace ThemeParkTycoonGame.Fancy.Windows
 
         private void MainWindow_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (e.RightButton == MouseButtonState.Pressed 
-                || e.MiddleButton == MouseButtonState.Pressed 
-                || e.XButton1 == MouseButtonState.Pressed 
-                || e.XButton2 == MouseButtonState.Pressed)
-                return;
-
-            this.DragMove();
+            if (e.LeftButton == MouseButtonState.Pressed )
+                this.DragMove();
         }
 
         private void CloseButton_Click(object sender, RoutedEventArgs e)
