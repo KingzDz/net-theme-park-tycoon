@@ -5,14 +5,18 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ThemeParkTycoonGame.Fancy.Controls"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="800" d:DesignWidth="800"
+>
     <StackPanel>
         <Button x:Name="AddNewGuestButton" Content="Add New Guest Button" Height="64" Click="AddNewGuestButton_Click"></Button>
         <Button x:Name="EditGuestButton" Click="EditGuestButton_Click" Height="64" Margin="0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch">Edit Guests</Button>
-
         <Button x:Name="RefreshGuestListButton" Click="RefreshGuestListButton_Click" Height="64" Margin="0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch">RefreshGuests</Button>
         <Button x:Name="changeWeatherButton"  Height="64" Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" Click="changeWeatherButton_Click" Content="Change Weather"/>
+        <Button x:Name="AddMoneyButton" Content="Add 10.000" Height="64" Click="AddMoneyButton_Click"></Button>
+        <Button x:Name="AddThousandButton" Height="64" Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" Content="Add $1000" Click="AddThousandButton_Click"/>
         <StackPanel x:Name="controlParent"></StackPanel>
+        
+        
 
     </StackPanel>
 

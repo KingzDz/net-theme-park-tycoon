@@ -46,6 +46,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             InitializeComponent();
 
             this.DataContext = this;
+
         }
     }
 }

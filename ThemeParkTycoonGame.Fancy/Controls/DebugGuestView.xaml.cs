@@ -36,7 +36,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             {
                 guestName = GuestNameTextBox.Text;
                 GuestStatLabel.Content = guestName;
-                debugView.guests.Guests[guestsListView.SelectedIndex].Name = guestName;
+                debugView.Guests.Guests[guestsListView.SelectedIndex].Name = guestName;
 
 
 

@@ -1,0 +1,88 @@
+﻿<Window x:Class="ThemeParkTycoonGame.Fancy.Controls.GuestinfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThemeParkTycoonGame.Fancy.Controls"
+        mc:Ignorable="d"
+        Title="GuestinfoWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <StackPanel>
+        <GroupBox Header="Status">
+            <Grid x:Name="statsPanel">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25.6"/>
+                    <RowDefinition Height="25.6"/>
+                    <RowDefinition Height="25.6"/>
+                    <RowDefinition Height="25.6"/>
+                </Grid.RowDefinitions>
+                
+                <Label x:Name="wantingRideLabel" Content="Wanting to go on a ride" Grid.Row="0" Grid.Column="0"/>
+                <Label x:Name="excitementLabel" Content="Excitement" Grid.Row="1" Grid.Column="0"/>
+                <Label x:Name="hungerLabel" Content="Hunger" Grid.Row="2" Grid.Column="0"/>
+                <Label x:Name="thirstLabel" Content="Thirst" Width="136" Height="25.6" Grid.Row="3" Grid.Column="0"/>
+                <Grid Grid.RowSpan="4" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="100"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25.6"/>
+                        <RowDefinition Height="25.6"/>
+                        <RowDefinition Height="25.6"/>
+                        <RowDefinition Height="25.6"/>
+                    </Grid.RowDefinitions>
+                    <Slider x:Name="wantingRideSlider" Value="10" Grid.Row="0" Grid.Column="0" IsEnabled="False"/>
+                    <Slider x:Name="excitementSlider" Value="5" Grid.Row="1" Grid.Column="0" IsEnabled="False"/>
+                    <Slider x:Name="hungerSlider" Value="6" Grid.Row="2" Grid.Column="0" IsEnabled="False"/>
+                    <Slider x:Name="thirstSlider" Value="8" Grid.Row="3" Grid.Column="0" IsEnabled="False"/>
+
+                    <Label x:Name="wantingRidePrecentageLabel" Grid.Row="0" Grid.Column="1" Content="0%" HorizontalAlignment="Center"/>
+                    <Label x:Name="excitementPrecentageLabel" Grid.Row="1" Grid.Column="1" Content="0%" HorizontalAlignment="Center"/>
+                    <Label x:Name="hungerRidePrecentageLabel" Grid.Row="2" Grid.Column="1" Content="0%" HorizontalAlignment="Center"/>
+                    <Label x:Name="thirstRidePrecentageLabel" Grid.Row="3" Grid.Column="1" Content="0%" HorizontalAlignment="Center"/>
+                </Grid>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Ride History">
+            <StackPanel>
+                <Label>kaas</Label>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Desires">
+            <StackPanel>
+                <Label>kaas</Label>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Financial History">
+            <StackPanel>
+                <ListView x:Name="financialHistory">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Width="100" Header="Balance Changed" DisplayMemberBinding="{Binding Amount}"/>
+                            <GridViewColumn Width="150" Header="Time of transaction" DisplayMemberBinding="{Binding Time}"/>
+                            <GridViewColumn Width="100" Header="Description" DisplayMemberBinding="{Binding Reason}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+
+            </StackPanel>
+        </GroupBox>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Image x:Name="imagePictureBox"  Height="50" Width="50"></Image>
+          
+        </StackPanel>
+
+        <!--<Label>Financial:</Label>
+        <StackPanel Orientation="Horizontal">
+            <Label>€</Label>
+            <Label x:Name="balanceLabel"></Label>
+        </StackPanel>
+        <StackPanel>
+            <ListView x:Name="financialHistory"></ListView>
+        </StackPanel>-->
+    </StackPanel>
+</Window>

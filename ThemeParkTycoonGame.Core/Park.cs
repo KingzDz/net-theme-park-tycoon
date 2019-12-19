@@ -1,3 +1,4 @@
+
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -190,3 +191,4 @@ namespace ThemeParkTycoonGame.Core
         public Weather Weather;
     }
 }
+

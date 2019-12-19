@@ -42,6 +42,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Speech" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -60,6 +61,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controls\GuestinfoWindow.xaml.cs">
+      <DependentUpon>GuestinfoWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\DebugGuestView.xaml.cs">
       <DependentUpon>DebugGuestView.xaml</DependentUpon>
     </Compile>
@@ -78,13 +82,25 @@
     <Compile Include="Controls\GuestsView.xaml.cs">
       <DependentUpon>GuestsView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\InventoryView.xaml.cs">
+      <DependentUpon>InventoryView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\MarketControl.xaml.cs">
       <DependentUpon>MarketControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\weatherChange.xaml.cs">
       <DependentUpon>weatherChange.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="WpfHelper.cs" />
+    <Page Include="Controls\GuestinfoWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\DebugGuestView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -109,6 +125,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\GuestsView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\InventoryView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -148,11 +168,6 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -160,6 +175,7 @@
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -181,6 +197,58 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\01w.jpg" />
+    <Resource Include="Resources\02m.jpg" />
+    <Resource Include="Resources\03w.jpg" />
+    <Resource Include="Resources\04w.jpg" />
+    <Resource Include="Resources\05w.jpg" />
+    <Resource Include="Resources\06w.jpg" />
+    <Resource Include="Resources\07w.jpg" />
+    <Resource Include="Resources\08m.jpg" />
+    <Resource Include="Resources\09w.jpg" />
+    <Resource Include="Resources\10m.jpg" />
+    <Resource Include="Resources\11m.jpg" />
+    <Resource Include="Resources\12m.jpg" />
+    <Resource Include="Resources\13m.jpg" />
+    <Resource Include="Resources\14m.jpg" />
+    <Resource Include="Resources\15w.jpg" />
+    <Resource Include="Resources\16w.jpg" />
+    <Resource Include="Resources\17w.jpg" />
+    <Resource Include="Resources\18w.jpg" />
+    <Resource Include="Resources\19m.jpg" />
+    <Resource Include="Resources\20w.jpg" />
+    <Resource Include="Resources\21w.jpg" />
+    <Resource Include="Resources\22w.jpg" />
+    <Resource Include="Resources\23w.jpg" />
+    <Resource Include="Resources\24w.jpg" />
+    <Resource Include="Resources\25w.jpg" />
+    <Resource Include="Resources\26m.jpg" />
+    <Resource Include="Resources\27m.jpg" />
+    <Resource Include="Resources\28m.jpg" />
+    <Resource Include="Resources\29w.jpg" />
+    <Resource Include="Resources\30w.jpg" />
+    <Resource Include="Resources\31m.jpg" />
+    <Resource Include="Resources\32m.jpg" />
+    <Resource Include="Resources\33w.jpg" />
+    <Resource Include="Resources\34m.jpg" />
+    <Resource Include="Resources\35w.jpg" />
+    <Resource Include="Resources\36m.jpg" />
+    <Resource Include="Resources\37w.jpg" />
+    <Resource Include="Resources\38w.jpg" />
+    <Resource Include="Resources\39w.jpg" />
+    <Resource Include="Resources\40w.jpg" />
+    <Resource Include="Resources\41w.jpg" />
+    <Resource Include="Resources\42w.jpg" />
+    <Resource Include="Resources\43w.jpg" />
+    <Resource Include="Resources\44w.jpg" />
+    <Resource Include="Resources\45m.jpg" />
+    <Resource Include="Resources\46w.jpg" />
+    <Resource Include="Resources\47w.jpg" />
+    <Resource Include="Resources\48m.jpg" />
+    <Resource Include="Resources\49w.jpg" />
+    <Resource Include="Resources\50w.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
