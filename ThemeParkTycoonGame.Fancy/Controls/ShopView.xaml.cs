@@ -116,7 +116,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             }
             else
             {
-                MessageBox.Show("Selecteer welk product u wilt verwijderen");
+                productListbox.Items.RemoveAt(productListbox.Items.IndexOf(productListbox.SelectedItem));
             }
         }
     }
