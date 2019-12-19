@@ -1,3 +1,4 @@
+
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,6 +33,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             {
                 guests = value;
 
+                
                 guests.GuestAdded += Guests_GuestAdded;
                 guests.GuestRemoved += Guests_GuestRemoved;
             }
@@ -47,11 +49,20 @@ namespace ThemeParkTycoonGame.Fancy.Controls
         private void Guests_GuestAdded(object sender, GuestAddedEventArgs e)
         {
             guestsListView.Items.Refresh();
+            
         }
 
         private void Guests_GuestRemoved(object sender, GuestRemovedEventArgs e)
         {
             guestsListView.Items.Refresh();
+        }
+
+        private void GuestsListView_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            Guest selectedGuest = (Guest)guestsListView.SelectedItems[0];
+
+            GuestinfoWindow Guestinfo = new GuestinfoWindow(selectedGuest);
+            Guestinfo.Show();
         }
     }
 }

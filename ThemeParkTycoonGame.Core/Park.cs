@@ -1,3 +1,4 @@
+
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,9 @@ namespace ThemeParkTycoonGame.Core
         public Wallet ParkWallet;
         public ParkInventory ParkInventory;
         public decimal EntryFee;
+
+        public List<Employee> Employees;
+        public EmployeeController EmployeeController;
 
         public GuestController GuestController;
 
@@ -65,6 +69,9 @@ namespace ThemeParkTycoonGame.Core
             EntryFee = 15;
 
             desirables = new List<Desire>();
+
+            Employees = new List<Employee>();
+            EmployeeController = new EmployeeController(this);
 
             GuestController = new GuestController(desirables, ref Guests);
             GuestController.MinimumCash = EntryFee; // TODO: when entryfee changes, this MinimumCash needs to as well.
@@ -183,3 +190,4 @@ namespace ThemeParkTycoonGame.Core
         public Weather Weather;
     }
 }
+

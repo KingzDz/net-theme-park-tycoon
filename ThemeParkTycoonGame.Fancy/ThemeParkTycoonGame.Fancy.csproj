@@ -42,6 +42,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Speech" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -60,21 +61,50 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controls\GuestinfoWindow.xaml.cs">
+      <DependentUpon>GuestinfoWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DebugGuestView.xaml.cs">
+      <DependentUpon>DebugGuestView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FinancialView.xaml.cs">
+      <DependentUpon>FinancialView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EmployeeView.xaml.cs">
+      <DependentUpon>EmployeeView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\DebugView.xaml.cs">
       <DependentUpon>DebugView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\GuestsView.xaml.cs">
       <DependentUpon>GuestsView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\InventoryView.xaml.cs">
-      <DependentUpon>InventoryView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Controls\MarketControl.xaml.cs">
       <DependentUpon>MarketControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\DirectoryListing.cs" />
-    <Compile Include="DirectoryListing.cs" />
+    <Compile Include="Controls\weatherChange.xaml.cs">
+      <DependentUpon>weatherChange.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WpfHelper.cs" />
+    <Page Include="Controls\GuestinfoWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\DebugGuestView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="Controls\ShopView.xaml.cs">
+      <DependentUpon>ShopView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Controls\FinancialView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\EmployeeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\DebugView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -83,15 +113,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Controls\InventoryView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Controls\MarketControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\ParkDetailsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\weatherChange.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ShopView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -150,72 +184,56 @@
     <Resource Include="icon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Image1.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\worknroll.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\kingdaka.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\kraken.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\minus5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\platform934.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\slotzilla.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\spacemountain.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\startours.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\starwarscantina.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\towerofterror.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\voletarium.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ironmaiden.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\balloonhouse.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\beersouvenir.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\hotdog.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\candyfloss.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fastandfurioussupercharged.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\forumularossa.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\hoghwartsexpress.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dinoarcade.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\dinoarcade - Copy.png" />
+    <Resource Include="Resources\01w.jpg" />
+    <Resource Include="Resources\02m.jpg" />
+    <Resource Include="Resources\03w.jpg" />
+    <Resource Include="Resources\04w.jpg" />
+    <Resource Include="Resources\05w.jpg" />
+    <Resource Include="Resources\06w.jpg" />
+    <Resource Include="Resources\07w.jpg" />
+    <Resource Include="Resources\08m.jpg" />
+    <Resource Include="Resources\09w.jpg" />
+    <Resource Include="Resources\10m.jpg" />
+    <Resource Include="Resources\11m.jpg" />
+    <Resource Include="Resources\12m.jpg" />
+    <Resource Include="Resources\13m.jpg" />
+    <Resource Include="Resources\14m.jpg" />
+    <Resource Include="Resources\15w.jpg" />
+    <Resource Include="Resources\16w.jpg" />
+    <Resource Include="Resources\17w.jpg" />
+    <Resource Include="Resources\18w.jpg" />
+    <Resource Include="Resources\19m.jpg" />
+    <Resource Include="Resources\20w.jpg" />
+    <Resource Include="Resources\21w.jpg" />
+    <Resource Include="Resources\22w.jpg" />
+    <Resource Include="Resources\23w.jpg" />
+    <Resource Include="Resources\24w.jpg" />
+    <Resource Include="Resources\25w.jpg" />
+    <Resource Include="Resources\26m.jpg" />
+    <Resource Include="Resources\27m.jpg" />
+    <Resource Include="Resources\28m.jpg" />
+    <Resource Include="Resources\29w.jpg" />
+    <Resource Include="Resources\30w.jpg" />
+    <Resource Include="Resources\31m.jpg" />
+    <Resource Include="Resources\32m.jpg" />
+    <Resource Include="Resources\33w.jpg" />
+    <Resource Include="Resources\34m.jpg" />
+    <Resource Include="Resources\35w.jpg" />
+    <Resource Include="Resources\36m.jpg" />
+    <Resource Include="Resources\37w.jpg" />
+    <Resource Include="Resources\38w.jpg" />
+    <Resource Include="Resources\39w.jpg" />
+    <Resource Include="Resources\40w.jpg" />
+    <Resource Include="Resources\41w.jpg" />
+    <Resource Include="Resources\42w.jpg" />
+    <Resource Include="Resources\43w.jpg" />
+    <Resource Include="Resources\44w.jpg" />
+    <Resource Include="Resources\45m.jpg" />
+    <Resource Include="Resources\46w.jpg" />
+    <Resource Include="Resources\47w.jpg" />
+    <Resource Include="Resources\48m.jpg" />
+    <Resource Include="Resources\49w.jpg" />
+    <Resource Include="Resources\50w.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
