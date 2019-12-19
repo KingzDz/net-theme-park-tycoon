@@ -4,6 +4,21 @@
              xmlns:local="clr-namespace:ThemeParkTycoonGame.Fancy"
              StartupUri="Windows/MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <BitmapImage x:Key="Caterpie" UriSource="Resources\caterpie_48.png">
+            </BitmapImage>
+            <BitmapImage x:Key="Baron" UriSource="pack://siteoforigin:,,,/Resources/caterpie_48.png"></BitmapImage>
+            <BitmapImage x:Key="Goliath" UriSource="Resources\efteling_python.png"></BitmapImage>
+            <BitmapImage x:Key="Python" UriSource="Resources\efteling_vogelrok.png"></BitmapImage>
+            <BitmapImage x:Key="Robin Hood" UriSource="Resources\caterpie_48.png"></BitmapImage>
+            <BitmapImage x:Key="Vogel Rok" UriSource="Resources\caterpie_48.png"></BitmapImage>
+            <BitmapImage x:Key="Kraken" UriSource="Resources\caterpie_48.png"></BitmapImage>
+            <BitmapImage x:Key="TOT" UriSource="Resources\caterpie_48.png"></BitmapImage>
+            <BitmapImage x:Key="SpaceM" UriSource="Resources\caterpie_48.png"></BitmapImage>
+            <BitmapImage x:Key="HowartsE" UriSource="Resources\caterpie_48.png"></BitmapImage>
+            <BitmapImage x:Key="Voletraium" UriSource="Resources\caterpie_48.png"></BitmapImage>
+            <BitmapImage x:Key="KingdaK" UriSource="Resources\caterpie_48.png"></BitmapImage>
+
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
