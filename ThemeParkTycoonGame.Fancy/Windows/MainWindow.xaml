@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ThemeParkTycoonGame.Fancy.Windows"
         xmlns:controls="clr-namespace:ThemeParkTycoonGame.Fancy.Controls"
         mc:Ignorable="d"
-        Title="{Binding Path=Name}" Height="450" Width="800" WindowStyle="None">
+        Title="{Binding Path=Name}" Height="450" Width="800" WindowStyle="SingleBorderWindow">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -15,12 +15,9 @@
         <StackPanel Orientation="Horizontal"
                     Grid.Row="0">
             <TextBlock Padding="5">
-                 <Run Text="Theme Park Tycoon Game - " />
+                 <Run Text="Theme Park Tycoon Game" />
                  <Run Text="{Binding Name}" />
             </TextBlock>
-            <Button Click="CloseButton_Click"
-                    Content="Close"
-                    x:Name="closeButton"/>
             <Image x:Name="imagePictureBox" Height="30" Width="50"/>
         </StackPanel>
         <Grid Grid.Row="1">
@@ -83,7 +80,7 @@
                         </StackPanel>
                     </TabItem.Header>
 
-                    <!--<controls:InventoryView x:Name="InventoryView"/>-->
+                    <controls:InventoryView x:Name="InventoryView"/>
                 </TabItem>
 
                 <TabItem>
