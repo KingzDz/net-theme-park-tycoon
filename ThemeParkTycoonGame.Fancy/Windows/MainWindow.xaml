@@ -21,6 +21,7 @@
             <Button Click="CloseButton_Click"
                     Content="Close"
                     x:Name="closeButton"/>
+            <Image x:Name="imagePictureBox" Height="30" Width="50"/>
         </StackPanel>
         <Grid Grid.Row="1">
             <TabControl>
