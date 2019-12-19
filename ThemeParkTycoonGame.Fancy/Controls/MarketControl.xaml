@@ -9,22 +9,42 @@
     <UserControl.Resources>
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
     </UserControl.Resources>
-    <StackPanel Orientation="Horizontal" Loaded="StackPanel_Loaded">
 
-        <StackPanel Width="650" Height="450">
 
-            <ListView x:Name="ShopList" PreviewMouseLeftButtonUp="listView_Click">
 
-            </ListView>
-        </StackPanel>
-        <StackPanel Width="150" Height="450" x:Name="Details">
+    <Grid Loaded="StackPanel_Loaded">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="6*" />
+            <ColumnDefinition Width="4*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+            <ListView Grid.Row="0"
+              x:Name="ShopList" 
+              PreviewMouseLeftButtonUp="listView_Click"  
+              Height="auto">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate >
+                        <StackPanel Orientation="Horizontal" ScrollViewer.CanContentScroll="True" 
+                                    ScrollViewer.VerticalScrollBarVisibility="auto">
+                            <Grid Height="160">
+                                <TextBlock Text="{Binding Name}"/>
+                                <Image  Source="{Binding Image}" MaxHeight="100" MaxWidth="300"/>
+                        </Grid>
+                        </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+        <StackPanel Grid.Column="1" x:Name="Details" >
             <Label x:Name="balanceLabel"></Label>
             <Label x:Name="NameLabel"></Label>
             <Label x:Name="DurationLabel"></Label>
             <Label x:Name="CostLabel"></Label>
-
             <Button x:Name="BuyButton" Click="BuyButton_Click">Buy</Button>
         </StackPanel>
-    </StackPanel>
-
+    </Grid>
 </UserControl>

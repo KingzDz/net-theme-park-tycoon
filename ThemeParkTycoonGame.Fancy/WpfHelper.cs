@@ -53,10 +53,10 @@ namespace ThemeParkTycoonGame.Fancy
                 new Ride("Hoghwarts Express", "pack://siteoforigin:,,,/Resources/hoghwartsexpress.jpg", 25000, 5),
                 new Ride("Voletarium", "pack://siteoforigin:,,,/Resources/voletarium.jpg", 25000, 5),
                 new Ride("Kingda Ka", "pack://siteoforigin:,,,/Resources/kingdaka.jpg", 25000, 5),
-                new Ride("Formula Rossa", "pack://siteoforigin:,,,/Resources/formularossa.jpg", 25000, 5),
                 new Ride("Slotzilla", "pack://siteoforigin:,,,/Resources/slotzilla.png", 25000, 5),
+                new Ride("Formula Rossa","pack://siteoforigin:,,,/Resources/forumularossa.jpg",25000, 5),
+                new Ride("Fast & Furious Supercharged", "pack://siteoforigin:,,,/Resources/fastandfurioussupercharged.jpg", 25000, 5),
                 new Ride("Star Tours", "pack://siteoforigin:,,,/Resources/startours.png", 25000, 5),
-                new Ride("Fast & Furious Supercharged", "pack://siteoforigin:,,,/Resources/fastandfurioussuperscharged.jpg", 25000, 5),
                 new Ride("Shop: HotDog Stand", "pack://siteoforigin:,,,/Resources/hotdog.jpg", 25000, 5),
                 new Ride("Shop: Minus 5 Ice Bar", "pack://siteoforigin:,,,/Resources/minus5.png", 25000, 5),
                 new Ride("Shop: Candy Floss", "pack://siteoforigin:,,,/Resources/candyfloss.jpg", 25000, 5),
@@ -66,9 +66,8 @@ namespace ThemeParkTycoonGame.Fancy
                 new Ride("Shop: Beer 'n Souvenir", "pack://siteoforigin:,,,/Resources/beersouvenir.png", 25000, 5),
                 new Ride("Shop: Balloon House", "pack://siteoforigin:,,,/Resources/balloonhouse.jpg", 25000, 5),
                 new Ride("Shop: Star Wars Catalina", "pack://siteoforigin:,,,/Resources/starwarscantina.png", 25000, 5),
-                new Ride("Shop: Dino Arcade", "pack://siteoforigin:,,,/Resources/dinoarcade.png", 25000, 5)
-
-        };
+                new Ride("Shop: Dino Arcade", "pack://siteoforigin:,,,/Resources/dinoarcade.png", 25000, 5),
+            };
         }
     }
 }

@@ -69,6 +69,8 @@
     <Compile Include="Controls\MarketControl.xaml.cs">
       <DependentUpon>MarketControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\DirectoryListing.cs" />
+    <Compile Include="DirectoryListing.cs" />
     <Compile Include="WpfHelper.cs" />
     <Page Include="Controls\DebugView.xaml">
       <SubType>Designer</SubType>
@@ -202,6 +204,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dinoarcade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\dinoarcade - Copy.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

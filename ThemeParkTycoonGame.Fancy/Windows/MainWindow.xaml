@@ -18,7 +18,7 @@
                  <Run Text="Theme Park Tycoon Game - " />
                  <Run Text="{Binding Name}" />
             </TextBlock>
-            <Button Click="CloseButton_Click"
+            <Button Click="CloseButton_Click" 
                     Content="Close"
                     x:Name="closeButton"/>
         </StackPanel>
