@@ -1,0 +1,24 @@
+﻿<Window x:Class="ThemeParkTycoonGame.Fancy.Controls.product"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThemeParkTycoonGame.Fancy.Controls"
+        mc:Ignorable="d"
+        Title="product" Height="350" Width="400">
+    <Grid>
+        <Label Name="nameLabel" VerticalAlignment="Top" Margin="0 0 0 0">Name:</Label>
+        <TextBox Name="nameTextBox" Height="25px" Width="100px" VerticalAlignment="Top" HorizontalAlignment="Center"></TextBox>
+        <Label Name="pictureLabel" VerticalAlignment="Top" Margin="0 25px 0 0">Picture:</Label>
+        <Button Width="100px" Height="25px" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0 25px 0 0"></Button>
+        <Label Name="priceNameLabel" VerticalAlignment="Top" Margin="0 50px 0 0">Price:</Label>
+        <TextBox Name="priceTextBox" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="143px 50px 0 0" Width="50px" Height="25px">0</TextBox>
+        <Button x:Name="priceHigherButton" Height="25px" Width="25px" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="193px 50px 0 0" Click="priceHigherButton_Click">+</Button>
+        <Button x:Name="priceLowerButton" Height="25px" Width="25px" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="218px 50px 0 0" Click="priceLowerButton_Click">-</Button>
+        <Label Name="statsLabel" VerticalAlignment="Top" Margin="0 100px 0 0">Stats:</Label>
+        <ListBox Name="statListBox" Height="160px" Width="285px" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="0 0 0 25px"></ListBox>
+        <Button Height="50px" Width="100px" Name="addStatButton" VerticalAlignment="Center" HorizontalAlignment="Right">Add Stat</Button>
+        <Button Height="50px" Width="100px" VerticalAlignment="Center" HorizontalAlignment="Right" Name="removeStatButton" Margin="0 150px 0 0">Remove Stat</Button>
+        <Button Height="25px" VerticalAlignment="Bottom" Name="addnewProductButton" Click="AddnewProductButton_Click_1">Create new product</Button>
+    </Grid>
+</Window>

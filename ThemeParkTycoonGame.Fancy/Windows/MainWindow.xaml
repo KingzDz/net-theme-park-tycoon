@@ -92,7 +92,7 @@
                         </StackPanel>
                     </TabItem.Header>
 
-                    <controls:ShopView x:Name="ShopControl"/>
+                    <controls:ShopView x:Name="item"/>
                 </TabItem>
                 
                 <TabItem>
