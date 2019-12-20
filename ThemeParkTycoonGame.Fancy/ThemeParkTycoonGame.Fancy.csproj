@@ -70,6 +70,9 @@
     <Compile Include="Windows\EmployeeApplicationsWindow.xaml.cs">
       <DependentUpon>EmployeeApplicationsWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\EditProduct.xaml.cs">
+      <DependentUpon>EditProduct.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\FinancialView.xaml.cs">
       <DependentUpon>FinancialView.xaml</DependentUpon>
     </Compile>
@@ -105,10 +108,21 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Compile Include="Controls\product.xaml.cs">
+      <DependentUpon>product.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\ShopView.xaml.cs">
       <DependentUpon>ShopView.xaml</DependentUpon>
     </Compile>
     <Page Include="Windows\EmployeeApplicationsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\EditProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\EditProduct.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -141,6 +155,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\weatherChange.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\product.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -15,9 +15,10 @@ using System.Windows.Shapes;
 namespace ThemeParkTycoonGame.Fancy.Controls
 {
     /// <summary>
-    /// Interaction logic for ShopsView.xaml
+    /// Interaction logic for Buyshop.xaml
     /// </summary>
-    public partial class ShopsView : Window
+    public partial class Item : Window
+   
     {
         public Item(List<item> items)
         {
@@ -35,6 +36,7 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             itemData = item;
             this.Close();
         }
-    }
-}
 
+    }
+
+}

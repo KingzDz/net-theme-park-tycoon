@@ -91,5 +91,10 @@ namespace ThemeParkTycoonGame.Forms.Screens
                 RefreshRides();
             }
         }
+
+        private void ridesListView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
