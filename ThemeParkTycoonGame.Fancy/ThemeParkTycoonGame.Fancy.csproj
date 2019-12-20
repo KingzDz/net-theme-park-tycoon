@@ -67,6 +67,9 @@
     <Compile Include="Controls\DebugGuestView.xaml.cs">
       <DependentUpon>DebugGuestView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\EmployeeApplicationsWindow.xaml.cs">
+      <DependentUpon>EmployeeApplicationsWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\EditProduct.xaml.cs">
       <DependentUpon>EditProduct.xaml</DependentUpon>
     </Compile>
@@ -111,7 +114,14 @@
     <Compile Include="Controls\ShopView.xaml.cs">
       <DependentUpon>ShopView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WpfHelper.cs" />
+    <Page Include="Windows\EmployeeApplicationsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\EditProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\EditProduct.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

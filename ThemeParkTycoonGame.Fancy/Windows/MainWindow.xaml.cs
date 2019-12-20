@@ -49,7 +49,7 @@ namespace ThemeParkTycoonGame.Fancy.Windows
             debugControl.Park = this.park;
 
             employeeControl.Guests = this.park.Guests;
-            employeeControl.Employees = this.park.Employees;
+            employeeControl.Employees = this.park.Employees;//this.park.Employees;
 
             // Give the park information to the marketControl
             marketControl.Park = this.park;
