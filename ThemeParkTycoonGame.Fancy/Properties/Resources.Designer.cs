@@ -61,6 +61,16 @@ namespace ThemeParkTycoonGame.Fancy.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap balloonhouse {
+            get {
+                object obj = ResourceManager.GetObject("balloonhouse", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon balloons_48 {
@@ -71,12 +81,52 @@ namespace ThemeParkTycoonGame.Fancy.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap beersouvenir {
+            get {
+                object obj = ResourceManager.GetObject("beersouvenir", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap candyfloss {
+            get {
+                object obj = ResourceManager.GetObject("candyfloss", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon caterpie_48 {
             get {
                 object obj = ResourceManager.GetObject("caterpie_48", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dinoarcade {
+            get {
+                object obj = ResourceManager.GetObject("dinoarcade", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fastandfurioussupercharged {
+            get {
+                object obj = ResourceManager.GetObject("fastandfurioussupercharged", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -101,12 +151,102 @@ namespace ThemeParkTycoonGame.Fancy.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap forumularossa {
+            get {
+                object obj = ResourceManager.GetObject("forumularossa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon guests_48 {
             get {
                 object obj = ResourceManager.GetObject("guests_48", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hoghwartsexpress {
+            get {
+                object obj = ResourceManager.GetObject("hoghwartsexpress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hotdog {
+            get {
+                object obj = ResourceManager.GetObject("hotdog", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Image1 {
+            get {
+                object obj = ResourceManager.GetObject("Image1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ironmaiden {
+            get {
+                object obj = ResourceManager.GetObject("ironmaiden", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kingdaka {
+            get {
+                object obj = ResourceManager.GetObject("kingdaka", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kraken {
+            get {
+                object obj = ResourceManager.GetObject("kraken", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minus5 {
+            get {
+                object obj = ResourceManager.GetObject("minus5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap platform934 {
+            get {
+                object obj = ResourceManager.GetObject("platform934", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -131,12 +271,62 @@ namespace ThemeParkTycoonGame.Fancy.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap slotzilla {
+            get {
+                object obj = ResourceManager.GetObject("slotzilla", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap spacemountain {
+            get {
+                object obj = ResourceManager.GetObject("spacemountain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap startours {
+            get {
+                object obj = ResourceManager.GetObject("startours", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap starwarscantina {
+            get {
+                object obj = ResourceManager.GetObject("starwarscantina", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon stats_48 {
             get {
                 object obj = ResourceManager.GetObject("stats_48", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap towerofterror {
+            get {
+                object obj = ResourceManager.GetObject("towerofterror", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -151,12 +341,32 @@ namespace ThemeParkTycoonGame.Fancy.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap voletarium {
+            get {
+                object obj = ResourceManager.GetObject("voletarium", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon weather_sun_48 {
             get {
                 object obj = ResourceManager.GetObject("weather_sun_48", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap worknroll {
+            get {
+                object obj = ResourceManager.GetObject("worknroll", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

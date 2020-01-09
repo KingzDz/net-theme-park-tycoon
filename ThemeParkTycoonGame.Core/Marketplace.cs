@@ -127,5 +127,10 @@ namespace ThemeParkTycoonGame.Core
 
             return objects[NumberGenerator.Next(objects.Count)];
         }
+
+        public static implicit operator string(Marketplace v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -19,9 +19,22 @@ namespace ThemeParkTycoonGame.Fancy.Controls
     /// </summary>
     public partial class ShopsView : Window
     {
-        public ShopsView()
+        public Item(List<item> items)
         {
             InitializeComponent();
+
+        }
+        private void addProductConfirmButton_Click(object sender, EventArgs e)
+        {
+            item = new item();
+
+            item.Name = itemNameTextBox.Text;
+            item.Description = itemDescriptionTextBox.Text;
+            item.Price = itemPriceTextBox.Text;
+
+            itemData = item;
+            this.Close();
         }
     }
 }
+

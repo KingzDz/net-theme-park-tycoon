@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,8 +35,8 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             }
         }
 
-        private List<Employee> employees;
-        public List<Employee> Employees
+        private ObservableCollection<Employee> employees;
+        public ObservableCollection<Employee> Employees
         {
             get
             {
@@ -47,6 +48,9 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             }
         }
 
+        EmployeeApplicationsWindow form = new EmployeeApplicationsWindow();
+        Random rng = new Random();
+
         public EmployeeView()
         {
             InitializeComponent();
@@ -54,14 +58,28 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             this.DataContext = this;
         }
 
+
+
         private void AddEmployeeButton_Click(object sender, RoutedEventArgs e)
         {
-            Employee NewEmployee = new Employee();
-            NewEmployee.Function = "Performer";
-            NewEmployee.Boost.StatType = StatTypes.GetByUniqueId("excitement");
+            if (rng.Next(0, 4) == 1)
+            {
+                form.HireableEmployees.Add(new Employee("Performer"));
+            }
 
-            Employees.Add(NewEmployee);
-            employeeListView.Items.Add(NewEmployee.Name);
+            form.ShowDialog();
+
+            if(form.HiredEmployee != null && form.IsHired)
+            {
+                Employees.Add(form.HiredEmployee);
+                form.IsHired = false;
+            }
+        }
+
+        private void FireButton_Click(object sender, RoutedEventArgs e)
+        {
+            Employees.RemoveAt(employeeListView.SelectedIndex);
+            
         }
     }
 }

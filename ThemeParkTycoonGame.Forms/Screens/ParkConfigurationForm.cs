@@ -103,5 +103,10 @@ namespace ThemeParkTycoonGame.Forms.Screens
 
             // Open ride window to allow changing entry fee, name and see riders/waiting time.
         }
+
+        private void balanceTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -41,18 +41,20 @@
             // 
             // statusStrip
             // 
+            this.statusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 361);
+            this.statusStrip.Location = new System.Drawing.Point(0, 449);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(330, 22);
+            this.statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStrip.Size = new System.Drawing.Size(440, 22);
             this.statusStrip.TabIndex = 1;
             this.statusStrip.Text = "statusStrip1";
             // 
             // toolStripStatusLabel
             // 
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(0, 17);
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(0, 16);
             // 
             // ridesListView
             // 
@@ -66,13 +68,16 @@
             listViewGroup1.Name = "coasterListViewGroup";
             this.ridesListView.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
             listViewGroup1});
+            this.ridesListView.HideSelection = false;
             this.ridesListView.Location = new System.Drawing.Point(0, 0);
+            this.ridesListView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ridesListView.MultiSelect = false;
             this.ridesListView.Name = "ridesListView";
-            this.ridesListView.Size = new System.Drawing.Size(330, 361);
+            this.ridesListView.Size = new System.Drawing.Size(440, 449);
             this.ridesListView.TabIndex = 2;
             this.ridesListView.UseCompatibleStateImageBehavior = false;
             this.ridesListView.ItemActivate += new System.EventHandler(this.ridesListView_ItemActivate);
+            this.ridesListView.SelectedIndexChanged += new System.EventHandler(this.ridesListView_SelectedIndexChanged);
             // 
             // nameColumnHeader
             // 
@@ -90,12 +95,13 @@
             // 
             // MarketplaceForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(330, 383);
+            this.ClientSize = new System.Drawing.Size(440, 471);
             this.Controls.Add(this.ridesListView);
             this.Controls.Add(this.statusStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MarketplaceForm";
             this.Text = "Marketplace (Buy Rides & Shops)";
             this.statusStrip.ResumeLayout(false);
