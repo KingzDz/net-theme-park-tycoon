@@ -15,6 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ThemeParkTycoonGame.Core;
 using ThemeParkTycoonGame.Fancy.Controls;
+using ThemeParkTycoonGame.Fancy.Windows;
 
 namespace ThemeParkTycoonGame.Fancy.Controls
 {
@@ -113,6 +114,25 @@ namespace ThemeParkTycoonGame.Fancy.Controls
             
             this.Park.ParkWallet.SubtractFromBalance(-1000, "A mysterious being gave the park money.");
             MessageBox.Show("Your balance is now: " + Park.ParkWallet.balance.ToString());
+        }
+
+        double height = 0;
+
+        public MainWindow ParentWindow { get; set; }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            foreach (FrameworkElement item in buttonHolder.Children)
+            {
+
+
+                if (item.Height > 0)
+                {
+                    height += item.Height;
+                }
+            }
+
+            ParentWindow.Height = height;
         }
     }
 }

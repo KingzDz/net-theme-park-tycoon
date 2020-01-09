@@ -5,9 +5,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ThemeParkTycoonGame.Fancy.Controls"
              mc:Ignorable="d" 
-             d:DesignHeight="800" d:DesignWidth="800"
+             d:DesignHeight="800" d:DesignWidth="800" Loaded="UserControl_Loaded"
 >
-    <StackPanel>
+    <StackPanel x:Name="buttonHolder">
         <Button x:Name="AddNewGuestButton" Content="Add New Guest Button" Height="64" Click="AddNewGuestButton_Click"></Button>
         <Button x:Name="EditGuestButton" Click="EditGuestButton_Click" Height="64" Margin="0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch">Edit Guests</Button>
         <Button x:Name="RefreshGuestListButton" Click="RefreshGuestListButton_Click" Height="64" Margin="0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch">RefreshGuests</Button>

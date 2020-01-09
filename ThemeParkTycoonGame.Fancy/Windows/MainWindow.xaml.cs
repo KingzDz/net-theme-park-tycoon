@@ -47,6 +47,7 @@ namespace ThemeParkTycoonGame.Fancy.Windows
             guestsControl.Guests = this.park.Guests;
             debugControl.Guests = this.park.Guests;
             debugControl.Park = this.park;
+            debugControl.ParentWindow = this;
 
             employeeControl.Guests = this.park.Guests;
             employeeControl.Employees = this.park.Employees;
